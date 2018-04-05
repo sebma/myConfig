@@ -1,0 +1,2 @@
+# myConfig
+My configuration files
