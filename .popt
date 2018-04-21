@@ -1,0 +1,3 @@
+# popt is library for parsing command line options, you can define aliases for binaries that use "libpopt"
+
+#rsync alias --sshfs -O -Pt -lrvu --exclude=*.swp --exclude=*~
