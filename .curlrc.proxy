@@ -1,0 +1,6 @@
+proxy=sogetoile:8080
+location-trusted
+cookie=nada
+insecure
+remote-name
+proxy-basic
