@@ -38,4 +38,5 @@ Plug 'vim-scripts/python_match.vim' " use % to travel Python's if, elif, etc.
 Plug 'vim-scripts/tagbar'
 Plug 'sbdchd/vim-shebang'
 Plug 'sirjofri/vim-biblereader'
+Plug 'goerz/ipynb_notedown.vim'
 call plug#end()
