@@ -50,6 +50,8 @@ c.InteractiveShellApp.exec_lines = ['from pylab import *','import scipy.io as si
 
 ## Configure matplotlib for interactive use with the default matplotlib backend.
 #c.InteractiveShellApp.matplotlib = None
+#c.InteractiveShellApp.matplotlib = "inline"
+#c.InteractiveShellApp.matplotlib = "notebook"
 
 ## Run the module as a script.
 #c.InteractiveShellApp.module_to_run = ''
