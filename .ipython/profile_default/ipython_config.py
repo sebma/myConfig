@@ -29,7 +29,8 @@
 #c.InteractiveShellApp.exec_files = []
 
 ## lines of code to run at IPython startup.
-c.InteractiveShellApp.exec_lines = ['from pylab import *','import scipy.io as sio']
+#c.InteractiveShellApp.exec_lines = []
+#c.InteractiveShellApp.exec_lines = ['from pylab import *','import scipy.io as sio']
 
 ## A list of dotted module names of IPython extensions to load.
 #c.InteractiveShellApp.extensions = []
