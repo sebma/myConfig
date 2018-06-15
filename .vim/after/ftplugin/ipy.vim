@@ -1,0 +1,1 @@
+../../plugged/vim-ipython/ftplugin/python/ipy.vim
