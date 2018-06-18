@@ -27,6 +27,7 @@ autocmd FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/n
 
 autocmd BufNewFile,BufRead *.ovpn set filetype=openvpn
 autocmd BufNewFile,BufRead *.octave set filetype=matlab
+autocmd BufNewFile,BufRead *.tikz set filetype=tex
 
 "let g:tagbar_ctags_bin = "$HOME/gnu/bin/ctags"
 
