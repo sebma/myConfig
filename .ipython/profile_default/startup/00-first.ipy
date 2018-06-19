@@ -25,6 +25,7 @@ try :
 	if isnotebook() :
 #		%matplotlib inline
 		%matplotlib notebook
+		%reload_ext tikzmagic
 	else :
 		print( "\n=> Starting the init script <%s> ..." % main.__file__ , file = stderr )
 		print( "=> Done." )
