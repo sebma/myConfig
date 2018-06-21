@@ -5,7 +5,8 @@ set listchars+=eol:¶
 "vim --version | grep "\+multi_byte"
 set listchars+=nbsp:☠
 set title
-set nopaste | set ruler
+"set nopaste
+set ruler
 set nohls autoindent
 set noexpandtab ts=4
 set incsearch
@@ -45,3 +46,4 @@ Plug 'sirjofri/vim-biblereader'
 Plug 'goerz/ipynb_notedown.vim'
 Plug 'ivanov/vim-ipython'
 call plug#end()
+set paste
