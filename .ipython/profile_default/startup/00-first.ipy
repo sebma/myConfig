@@ -18,16 +18,21 @@ def isnotebook() :
 		return False      # Probably standard Python interpreter
 
 try :
+	print( "\n=> Starting the init script <%s> ..." % main.__file__ , file = stderr )
+
+	if isnotebook() :
+#		%matplotlib inline
+		%matplotlib notebook
+
 	import matplotlib as mpl
 	import matplotlib.pyplot as plt
 	import numpy as np
 	import pandas as pd, pandas as pda
-	if isnotebook() :
-#		%matplotlib inline
-		%matplotlib notebook
-		%reload_ext tikzmagic
-	else :
-		print( "\n=> Starting the init script <%s> ..." % main.__file__ , file = stderr )
-		print( "=> Done." )
+	# reload external modules when they change.
+	%reload_ext autoreload
+	%autoreload 2
+	%reload_ext tikzmagic
+
+	print( "=> Done." )
 except Exception as why :
 	print("\n%s" % why)
