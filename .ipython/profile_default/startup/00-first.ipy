@@ -36,7 +36,6 @@ try :
 		%matplotlib auto
 
 	import matplotlib as mpl
-	print( "=> The current backend is: <%s>" % mpl.get_backend(), file=stderr )
 	import matplotlib.pyplot as plt
 	import numpy as np
 	import pandas as pd, pandas as pda
@@ -45,6 +44,7 @@ try :
 	%autoreload 2
 	%reload_ext tikzmagic
 
-	print( "=> DONE.\n" )
 except Exception as why :
 	print("\n%s" % why)
+
+print( "=> End of the init script." )
