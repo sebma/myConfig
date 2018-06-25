@@ -9,13 +9,21 @@ def isnotebook() :
 		from IPython import get_ipython
 		shell = get_ipython().__class__.__name__
 		if shell == 'ZMQInteractiveShell':
-			return True   # Jupyter notebook or qtconsole
+			isNB = True   # Jupyter notebook or qtconsole
+			interpreter = "Jupyter"
 		elif shell == 'TerminalInteractiveShell':
-			return False  # Terminal running IPython
-		else:
-			return False  # Other type (?)
-	except NameError :
-		return False      # Probably standard Python interpreter
+			isNB = False  # Terminal running IPython
+			interpreter = "IPython"
+		else :
+			isNB = False  # Terminal running Python
+			interpreter = "Python"
+	except NameError as why :
+		print( "=> ERROR: %s" % why, file = stderr )
+		isNB = False      # Probably standard Python interpreter
+		interpreter = "UNKNOWN"
+
+	print( "=> interpreter = <%s>" % interpreter )
+	return isNB
 
 try :
 	print( "\n=> Starting the init script <%s> ..." % main.__file__ , file = stderr )
@@ -33,6 +41,6 @@ try :
 	%autoreload 2
 	%reload_ext tikzmagic
 
-	print( "=> Done." )
+	print( "=> DONE.\n" )
 except Exception as why :
 	print("\n%s" % why)
