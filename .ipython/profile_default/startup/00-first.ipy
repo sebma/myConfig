@@ -4,7 +4,7 @@ from __future__ import print_function
 from sys import stdout, stderr, exit
 import __main__ as main
 
-def isnotebook() :
+def notebookType() :
 	try :
 		from IPython import get_ipython
 		shell = get_ipython().__class__.__name__
@@ -22,17 +22,21 @@ def isnotebook() :
 		isNB = False      # Probably standard Python interpreter
 		interpreter = "UNKNOWN"
 
-	print( "=> interpreter = <%s>" % interpreter )
-	return isNB
+#	print( "=> interpreter = <%s>" % interpreter )
+	return interpreter
 
 try :
 	print( "\n=> Starting the init script <%s> ..." % main.__file__ , file = stderr )
 
-	if isnotebook() :
+	if notebookType() == "Jupyter" :
+		print( "=> This is a Jupyter notebook, switching to <notebook> backend.", file=stderr )
 #		%matplotlib inline
 		%matplotlib notebook
+	elif notebookType() == "IPython" :
+		%matplotlib auto
 
 	import matplotlib as mpl
+	print( "=> The current backend is: <%s>" % mpl.get_backend(), file=stderr )
 	import matplotlib.pyplot as plt
 	import numpy as np
 	import pandas as pd, pandas as pda
