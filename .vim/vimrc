@@ -6,7 +6,6 @@ set listchars+=eol:¶
 set listchars+=nbsp:☠
 set title
 "set nopaste
-set ruler
 set nohls autoindent
 set noexpandtab ts=4
 set incsearch
@@ -47,3 +46,4 @@ Plug 'goerz/ipynb_notedown.vim'
 Plug 'ivanov/vim-ipython'
 call plug#end()
 set paste
+set ruler
