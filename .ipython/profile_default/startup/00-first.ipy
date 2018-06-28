@@ -2,7 +2,8 @@
 
 from __future__ import print_function
 from sys import stdout, stderr, exit
-import __main__ as main
+import os, stat
+import __main__
 
 def notebookType() :
 	try :
@@ -25,26 +26,42 @@ def notebookType() :
 #	print( "=> interpreter = <%s>" % interpreter )
 	return interpreter
 
-try :
-	print( "\n=> Starting the init script <%s> ..." % main.__file__ , file = stderr )
+def init_Jupyter() :
+	XDG_RUNTIME_DIR = os.environ.get('XDG_RUNTIME_DIR')
+	if XDG_RUNTIME_DIR :
+		jupyterRunTimeDIR = XDG_RUNTIME_DIR + '/jupyter'
+	else :
+		import jupyter_core.paths
+		jupyterRunTimeDIR = jupyter_core.paths.jupyter_runtime_dir()
 
-	if notebookType() == "Jupyter" :
-		print( "=> This is a Jupyter notebook, switching to <notebook> backend.", file=stderr )
-#		%matplotlib inline
-		%matplotlib notebook
-	elif notebookType() == "IPython" :
-		%matplotlib auto
+	print( "=> Adding the sticky bit to Jupyter RunTime DIR : %s...\n" % jupyterRunTimeDIR )
+	if not os.path.exists( jupyterRunTimeDIR ) : os.mkdir( jupyterRunTimeDIR, mode = 0o1755 )
+	else : os.chmod(jupyterRunTimeDIR, os.stat(jupyterRunTimeDIR).st_mode | stat.S_ISVTX )
 
-	import matplotlib as mpl
-	import matplotlib.pyplot as plt
-	import numpy as np
-	import pandas as pd, pandas as pda
-	# reload external modules when they change.
-	%reload_ext autoreload
-	%autoreload 2
-	%reload_ext tikzmagic
+def main() :
+	try :
+		print( "\n=> Starting the init script <%s> ...\n" % __main__.__file__ , file = stderr )
+		init_Jupyter()
+	
+		if notebookType() == "Jupyter" :
+			print( "=> This is a Jupyter notebook, switching to <notebook> backend.", file=stderr )
+	#		%matplotlib inline
+			%matplotlib notebook
+		elif notebookType() == "IPython" :
+			%matplotlib auto
+	
+		import matplotlib as mpl
+		import matplotlib.pyplot as plt
+		import numpy as np
+		import pandas as pd, pandas as pda
+		# reload external modules when they change.
+		%reload_ext autoreload
+		%autoreload 2
+		%reload_ext tikzmagic
+	
+	except Exception as why :
+		print("\n%s" % why)
+	
+	print( "=> End of the init script." )
 
-except Exception as why :
-	print("\n%s" % why)
-
-print( "=> End of the init script." )
+main()
