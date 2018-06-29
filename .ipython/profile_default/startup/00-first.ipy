@@ -26,7 +26,7 @@ def notebookType() :
 #	print( "=> interpreter = <%s>" % interpreter )
 	return interpreter
 
-def init_Jupyter() :
+def init_Jupyter() : # https://github.com/jupyter/notebook/issues/3718
 	XDG_RUNTIME_DIR = os.environ.get('XDG_RUNTIME_DIR')
 	if XDG_RUNTIME_DIR :
 		jupyterRunTimeDIR = XDG_RUNTIME_DIR + '/jupyter'
@@ -35,8 +35,8 @@ def init_Jupyter() :
 		jupyterRunTimeDIR = jupyter_core.paths.jupyter_runtime_dir()
 
 	print( "=> Adding the sticky bit to Jupyter RunTime DIR : %s...\n" % jupyterRunTimeDIR )
-	if not os.path.exists( jupyterRunTimeDIR ) : os.mkdir( jupyterRunTimeDIR, mode = 0o1755 )
-	else : os.chmod(jupyterRunTimeDIR, os.stat(jupyterRunTimeDIR).st_mode | stat.S_ISVTX )
+	if not os.path.exists( jupyterRunTimeDIR ) : os.mkdir( jupyterRunTimeDIR, mode = 0o755 ) # MacOS does not support setting the sticky bit during the "mkdir", it has to be done in the "chmod" call, see "man 2 mkdir"
+	os.chmod(jupyterRunTimeDIR, os.stat(jupyterRunTimeDIR).st_mode | stat.S_ISVTX ) # Add the sticky bit
 
 def main() :
 	try :
