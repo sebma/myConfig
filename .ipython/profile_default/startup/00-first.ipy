@@ -1,10 +1,8 @@
 #!/usr/bin/env ipython
 
 from __future__ import print_function
-from sys import stdout, stderr, exit
-import os, stat
+import os, stat, sys
 import __main__
-from collections import OrderedDict
 
 def notebookType() :
 	try :
@@ -20,7 +18,7 @@ def notebookType() :
 			isNB = False  # Terminal running Python
 			interpreter = "Python"
 	except NameError as why :
-		print( "=> ERROR: %s" % why, file = stderr )
+		print( "=> ERROR: %s" % why, file = sys.stderr )
 		isNB = False      # Probably standard Python interpreter
 		interpreter = "UNKNOWN"
 
@@ -40,14 +38,15 @@ def init_Jupyter() : # https://github.com/jupyter/notebook/issues/3718
 	os.chmod(jupyterRunTimeDIR, os.stat(jupyterRunTimeDIR).st_mode | stat.S_ISVTX ) # Add the sticky bit
 
 try :
-	print( "\n=> Starting the init script <%s> ...\n" % __main__.__file__ , file = stderr )
+	interpreter = notebookType()
+	print( "\n=> Starting the %s init script <%s> ...\n" % ( interpreter, __main__.__file__) , file = sys.stderr )
 	init_Jupyter()
 
-	if notebookType() == "Jupyter" :
-		print( "=> This is a Jupyter notebook, switching to <notebook> backend.", file=stderr )
+	if interpreter == "Jupyter" :
+		print( "=> This is a Jupyter notebook, switching to <notebook> backend.", file = sys.stderr )
 #		%matplotlib inline
 		%matplotlib notebook
-	elif notebookType() == "IPython" :
+	elif interpreter == "IPython" :
 		%matplotlib auto
 
 	import matplotlib as mpl
