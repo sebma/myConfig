@@ -53,20 +53,21 @@ try :
 #		%matplotlib inline
 		%matplotlib notebook
 	elif interpreter == "IPython" :
-		%matplotlib auto
+#		%matplotlib auto # plt.show() closes immediatly when I import ipdb inside any script AND "%matplotlib" is called in the IPython startup script
+		pass
 
 	import matplotlib as mpl
 	import matplotlib.pyplot as plt
 	import numpy as np
 	import pandas as pd, pandas as pda
 	# reload external modules when they change.
-	%reload_ext autoreload
-	%autoreload 2
-	%reload_ext tikzmagic
+#	%reload_ext autoreload
+#	%autoreload 2
+#	%reload_ext tikzmagic
 
 except Exception as why :
 	print("\n%s\n" % why)
 
 print( "=> Imported modules are :\n" )
 %whos module
-print( "\n=> End of the init script." )
+print( "\n=> End of the init script.\n" )
