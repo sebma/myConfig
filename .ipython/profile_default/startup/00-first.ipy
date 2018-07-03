@@ -39,13 +39,13 @@ def init_Jupyter() : # https://github.com/jupyter/notebook/issues/3718
 		import jupyter_core.paths
 		jupyterRunTimeDIR = jupyter_core.paths.jupyter_runtime_dir()
 
-	print( "=> Adding the sticky bit to Jupyter RunTime DIR : %s...\n" % jupyterRunTimeDIR )
+#	print( "=> Adding the sticky bit to Jupyter RunTime DIR : %s...\n" % jupyterRunTimeDIR )
 	if not os.path.exists( jupyterRunTimeDIR ) : os.makedirs( jupyterRunTimeDIR, mode = 0o755 ) # MacOS does not support setting the sticky bit during the "mkdir", it has to be done in the "chmod" call, see "man 2 mkdir"
 	os.chmod(jupyterRunTimeDIR, os.stat(jupyterRunTimeDIR).st_mode | stat.S_ISVTX ) # Add the sticky bit
 
 try :
 	interpreter = notebookInterpreter()
-	print( "\n=> Starting the %s init script <%s> ...\n" % ( interpreter, __main__.__file__) , file = sys.stderr )
+	print( "\n=> Starting the %s init script <%s> ..." % ( interpreter, __main__.__file__) , file = sys.stderr )
 	init_Jupyter()
 
 	if interpreter == "Jupyter" :
@@ -68,6 +68,6 @@ try :
 except Exception as why :
 	print("\n%s\n" % why)
 
-print( "=> Imported modules are :\n" )
-%whos module
-print( "\n=> End of the init script.\n" )
+#print( "=> Imported modules are :\n" )
+#%whos module
+print( "\n=> End of the IPython init script.\n" )
