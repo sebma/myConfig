@@ -1,0 +1,16 @@
+#cf. man a2ps pour les descriptions des options
+#Pour imprimer en couleur ou niveau de gris (suivant l'imprimante)
+Options: --prologue=color
+#Pour imprimer sur du papier A4
+Options: -M A4
+#Pour imprimer 2 pages par feuille
+Options: -2
+#Pour imprimer 90 caracteres par lignes
+Options: -l 90
+#Nom du flux "stdin" quand 'a2ps' commande lit dans un "pipe"
+Options: --stdin=" "
+#Pretty printing
+Options: --pretty-print
+Options: -j #print borders around columns
+#Options: --margin=10
+#Options: --columns=2
