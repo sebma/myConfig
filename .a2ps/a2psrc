@@ -1,0 +1,5 @@
+#cf. man a2ps pour les descriptions des options
+Include: TSP.a2psrc
+#cf. /usr/local/etc/a2ps.cfg
+Delegation: pdf2ps pdf:ps \
+    pdf2ps $f #f0 && #{del.psselect} #f0 | #{del.psnup}
