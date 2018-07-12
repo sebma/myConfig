@@ -44,6 +44,7 @@ Plug 'sirjofri/vim-biblereader'
 Plug 'goerz/ipynb_notedown.vim'
 Plug 'ivanov/vim-ipython'
 call plug#end()
+
 set paste
 set ruler
 set modeline
