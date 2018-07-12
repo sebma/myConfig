@@ -8,7 +8,6 @@ set title
 "set nopaste
 set nohls autoindent
 set noexpandtab ts=4
-set incsearch
 syntax on
 
 " Shortcut to rapidly toggle `set list` with CTRL+L
@@ -49,3 +48,4 @@ set paste
 set ruler
 set modeline
 set tags+=./tags;
+set incsearch "Search in 'real-time'
