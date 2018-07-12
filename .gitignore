@@ -2,3 +2,5 @@
 watch_later/
 .netrwhist
 .vim/plugged/*/.git
+*.key
+*.p12
