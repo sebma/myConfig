@@ -4,3 +4,4 @@ watch_later/
 .vim/plugged/*/.git
 *.key
 *.p12
+.*.swp
