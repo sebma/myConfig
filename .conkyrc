@@ -105,7 +105,7 @@ TEXT
 ${color white}${exec lsb_release -sirc | tr "\n" " "}on ${color green}${time %A %x}${color white} at ${color red}${time %X}
 #${color white}Date: ${color1}${time %A %d %B %Y}${color white} a ${color red}${time %H:%M:%S}
 #${color white}IP Ethernet: ${color1}${addr eth0}${color white}
-#${color white}ESSID: ${color1}${wireless_essid wlan0}${color white} Signal WiFi: ${color1}${wireless_bitrate wlan0}
+${color lightblue}IP Wifi: ${color1}${addr wlan0}${color lightblue} Card BitRate : ${color1}${wireless_bitrate wlan0}${color lightblue} Signal WiFi: ${color1}${wireless_link_qual wlan0}%
 #${offset -5}${color white}${font StyleBats:style=CleanCut:size=12}q ${voffset -2}${font Bitstream Vera Sans Mono:style=Bold:size=11}Météo${font} ${hr}${color1}${execpi 1800 conkyForecast --location=FRXX5635 --template=/home/seb/.conky/conkyForecast.template}
 #${color white}Load :${color1} $loadavg Nom du desktop: $desktop_name
 ${color white}CPU1 Utilisé :${color1} ${cpu cpu1}% ${color white}${cpubar cpu1}
@@ -121,7 +121,7 @@ ${color white}${memgraph mem yellow FC8820}
 #${color white}IO Writes :${color1} $memperc% : $mem/$memmax ${color white}${membar}
 ${color white}Disk I/O R/W :
 ${color white}${diskiograph /dev/sda yellow FC8820}
-${color white}Wifi AP: ${color red}${wireless_bitrate wlan0} ${color white}Temperature ACPI: ${color1}${acpitemp}degres ${color white}Temperature sda: ${color blue}${hddtemp}degres
+${color white}Temperature ACPI: ${color1}${acpitemp}degres ${color white}Temperature sda: ${color blue}${hddtemp}degres
 ${color white}Occupation du Swap :${color1} $swap/$swapmax - $swapperc% ${color white}${swapbar}
 ${color white}Occupation de /boot : ${color1}${fs_used /boot} / ${fs_size /boot} - ${fs_used_perc /boot}% ${color white}${fs_bar /boot}
 ${color white}Occupation de /: ${color1}${fs_used /} / ${fs_size /} - ${fs_used_perc /}% ${color white}${fs_bar /}
