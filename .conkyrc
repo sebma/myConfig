@@ -105,16 +105,16 @@ TEXT
 ${color white}${exec lsb_release -sirc | tr "\n" " "}on ${color green}${time %A %x}${color white} at ${color red}${time %X}
 #${color white}Date: ${color1}${time %A %d %B %Y}${color white} a ${color red}${time %H:%M:%S}
 #${color white}IP Ethernet: ${color1}${addr eth0}${color white}
-${color lightblue}IP Wifi: ${color1}${addr wlan0}${color lightblue} Card BitRate : ${color1}${wireless_bitrate wlan0}${color lightblue} Signal WiFi: ${color1}${wireless_link_qual wlan0}%
-#${offset -5}${color white}${font StyleBats:style=CleanCut:size=12}q ${voffset -2}${font Bitstream Vera Sans Mono:style=Bold:size=11}Météo${font} ${hr}${color1}${execpi 1800 conkyForecast --location=FRXX5635 --template=/home/seb/.conky/conkyForecast.template}
+${color lightblue}IP Wifi: ${color1}${addr wlan0}${color lightblue} Max BitRate : ${color1}${wireless_bitrate wlan0}${color lightblue} Signal WiFi : ${color1}${wireless_link_qual wlan0}%
+#${offset -5}${color white}${font StyleBats:style=CleanCut:size=12}q ${voffset -2}${font Bitstream Vera Sans Mono:style=Bold:size=11}Meteo${font} ${hr}${color1}${execpi 1800 conkyForecast --location=FRXX5635 --template=/home/seb/.conky/conkyForecast.template}
 #${color white}Load :${color1} $loadavg Nom du desktop: $desktop_name
-${color white}CPU1 Utilisé :${color1} ${cpu cpu1}% ${color white}${cpubar cpu1}
+${color white}CPU1 Utilise :${color1} ${cpu cpu1}% ${color white}${cpubar cpu1}
 ${color white}${cpugraph cpu1 yellow FC8820}
-${color white}CPU2 Utilisé :${color1} ${cpu cpu2}% ${color white}${cpubar cpu2}
+${color white}CPU2 Utilise :${color1} ${cpu cpu2}% ${color white}${cpubar cpu2}
 ${color white}${cpugraph cpu2 yellow FC8820}
-${color white}CPU3 Utilisé :${color1} ${cpu cpu3}% ${color white}${cpubar cpu3}
+${color white}CPU3 Utilise :${color1} ${cpu cpu3}% ${color white}${cpubar cpu3}
 ${color white}${cpugraph cpu3 yellow FC8820}
-${color white}CPU4 Utilisé :${color1} ${cpu cpu4}% ${color white}${cpubar cpu4}
+${color white}CPU4 Utilise :${color1} ${cpu cpu4}% ${color white}${cpubar cpu4}
 ${color white}${cpugraph cpu4 yellow FC8820}
 ${color white}Memoire RAM :${color1} $memperc% : $mem/$memmax ${color white}${membar}
 ${color white}${memgraph mem yellow FC8820}
