@@ -5,3 +5,4 @@ watch_later/
 *.key
 *.p12
 .*.swp
+*.save
