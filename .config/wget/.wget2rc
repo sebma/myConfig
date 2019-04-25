@@ -1,0 +1,6 @@
+continue=on
+timestamping=yes
+content-disposition=on
+check-certificate=off
+#verbose=off
+#user-agent=Mozilla
