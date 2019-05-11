@@ -1,5 +1,5 @@
 .DS_Store
-.config/smtube/smtube2.ini
+smtube/smtube2.ini
 watch_later/
 .netrwhist
 .vim/plugged/*/.git
