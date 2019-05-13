@@ -7,7 +7,7 @@ set listchars+=nbsp:☠
 set title
 "set nopaste
 set nohls autoindent
-set noexpandtab ts=4
+set noexpandtab tabstop=4 shiftwidth=4
 syntax on
 
 " Shortcut to rapidly toggle `set list` with CTRL+L
@@ -17,6 +17,8 @@ nmap <c-n> :set nu! \| :set ruler<CR>
 nmap <F5> :e<CR>
 map <F6> <C-W>w
 nmap <F8> :TagbarToggle<CR>
+"nnoremap / /\v
+"vnoremap / /\v
 
 "autocmd StdinReadPost * set buftype=nofile
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif "Remember last cursor position
