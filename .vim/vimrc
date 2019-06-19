@@ -17,7 +17,7 @@ nmap <c-n> :set nu! \| :set ruler<CR>
 nmap <F5> :e<CR>
 map <F6> <C-W>w
 nmap <F8> :TagbarToggle<CR>
-"nnoremap / /\v
+"nnoremap / /\v # enable Extended Regular Expression search
 "vnoremap / /\v
 
 "autocmd StdinReadPost * set buftype=nofile
