@@ -3,7 +3,7 @@ DataCount=4
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
-DataCount=8
+DataCount=9
 Enabled=true
 Name=KMenuEdit
 SystemGroup=1
@@ -40,16 +40,16 @@ Type=SHORTCUT
 Uuid={d03619b6-9b3c-48cc-9d9c-a2aadb485550}
 
 [Data_1_2]
-Comment=vlc1.desktop
+Comment=smtube.desktop
 Enabled=true
-Name=Lecteur multimédia VLC
+Name=SMTube
 Type=MENUENTRY_SHORTCUT_ACTION_DATA
 
 [Data_1_2Actions]
 ActionsCount=1
 
 [Data_1_2Actions0]
-CommandURL=vlc1.desktop
+CommandURL=smtube.desktop
 Type=MENUENTRY
 
 [Data_1_2Conditions]
@@ -61,21 +61,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_2Triggers0]
-Key=
+Key=Meta+S
 Type=SHORTCUT
-Uuid={a4f37840-e029-4da6-9f84-18c578ee527f}
+Uuid={7acb9828-bed7-4498-ae71-3787e7309656}
 
 [Data_1_3]
-Comment=smtube.desktop
+Comment=thunderbird.desktop
 Enabled=true
-Name=SMTube
+Name=Thunderbird Mail
 Type=MENUENTRY_SHORTCUT_ACTION_DATA
 
 [Data_1_3Actions]
 ActionsCount=1
 
 [Data_1_3Actions0]
-CommandURL=smtube.desktop
+CommandURL=thunderbird.desktop
 Type=MENUENTRY
 
 [Data_1_3Conditions]
@@ -87,21 +87,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_3Triggers0]
-Key=Meta+S
+Key=Meta+M
 Type=SHORTCUT
-Uuid={7acb9828-bed7-4498-ae71-3787e7309656}
+Uuid={8b7a10c3-e958-4687-97bc-17cf2747106c}
 
 [Data_1_4]
-Comment=thunderbird.desktop
+Comment=Gnome Terminal.desktop
 Enabled=true
-Name=Thunderbird Mail
+Name=Gnome Terminal
 Type=MENUENTRY_SHORTCUT_ACTION_DATA
 
 [Data_1_4Actions]
 ActionsCount=1
 
 [Data_1_4Actions0]
-CommandURL=thunderbird.desktop
+CommandURL=Gnome Terminal.desktop
 Type=MENUENTRY
 
 [Data_1_4Conditions]
@@ -113,21 +113,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_4Triggers0]
-Key=Meta+M
+Key=Meta+T
 Type=SHORTCUT
-Uuid={8b7a10c3-e958-4687-97bc-17cf2747106c}
+Uuid={b72cddae-e848-461f-a11f-5781cd7a89df}
 
 [Data_1_5]
-Comment=Gnome Terminal.desktop
+Comment=ipython3.desktop
 Enabled=true
-Name=Gnome Terminal
+Name=ipython3
 Type=MENUENTRY_SHORTCUT_ACTION_DATA
 
 [Data_1_5Actions]
 ActionsCount=1
 
 [Data_1_5Actions0]
-CommandURL=Gnome Terminal.desktop
+CommandURL=ipython3.desktop
 Type=MENUENTRY
 
 [Data_1_5Conditions]
@@ -139,21 +139,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_5Triggers0]
-Key=Meta+T
+Key=Meta+I
 Type=SHORTCUT
-Uuid={b72cddae-e848-461f-a11f-5781cd7a89df}
+Uuid={985664c5-6540-47b5-a3c2-ccca0a011618}
 
 [Data_1_6]
-Comment=ipython3.desktop
+Comment=vlc.desktop
 Enabled=true
-Name=ipython3
+Name=VLC media player
 Type=MENUENTRY_SHORTCUT_ACTION_DATA
 
 [Data_1_6Actions]
 ActionsCount=1
 
 [Data_1_6Actions0]
-CommandURL=ipython3.desktop
+CommandURL=vlc.desktop
 Type=MENUENTRY
 
 [Data_1_6Conditions]
@@ -165,21 +165,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_6Triggers0]
-Key=Meta+I
+Key=Meta+V
 Type=SHORTCUT
-Uuid={985664c5-6540-47b5-a3c2-ccca0a011618}
+Uuid={9d1b361d-bfb9-45da-a3aa-5ed14d1f991c}
 
 [Data_1_7]
-Comment=vlc.desktop
+Comment=kde4-konsole.desktop
 Enabled=true
-Name=VLC media player
+Name=Konsole
 Type=MENUENTRY_SHORTCUT_ACTION_DATA
 
 [Data_1_7Actions]
 ActionsCount=1
 
 [Data_1_7Actions0]
-CommandURL=vlc.desktop
+CommandURL=kde4-konsole.desktop
 Type=MENUENTRY
 
 [Data_1_7Conditions]
@@ -191,21 +191,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_7Triggers0]
-Key=Meta+V
+Key=Meta+K
 Type=SHORTCUT
-Uuid={9d1b361d-bfb9-45da-a3aa-5ed14d1f991c}
+Uuid={8e960078-8fcc-496b-913f-d9813750a899}
 
 [Data_1_8]
-Comment=kde4-konsole.desktop
+Comment=Pale_Moon_Web_Browser.desktop
 Enabled=true
-Name=Konsole
+Name=Pale Moon Web Browser
 Type=MENUENTRY_SHORTCUT_ACTION_DATA
 
 [Data_1_8Actions]
 ActionsCount=1
 
 [Data_1_8Actions0]
-CommandURL=kde4-konsole.desktop
+CommandURL=Pale_Moon_Web_Browser.desktop
 Type=MENUENTRY
 
 [Data_1_8Conditions]
@@ -217,9 +217,35 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_8Triggers0]
-Key=Meta+K
+Key=Meta+W
 Type=SHORTCUT
-Uuid={8e960078-8fcc-496b-913f-d9813750a899}
+Uuid={81a386e9-c939-4eec-8946-f4956f09c764}
+
+[Data_1_9]
+Comment=Comment
+Enabled=true
+Name=File Manager
+Type=SIMPLE_ACTION_DATA
+
+[Data_1_9Actions]
+ActionsCount=1
+
+[Data_1_9Actions0]
+CommandURL=kde4-dolphin.desktop
+Type=MENUENTRY
+
+[Data_1_9Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_1_9Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_1_9Triggers0]
+Key=Meta+F
+Type=SHORTCUT
+Uuid={977e9f16-9fc7-46b5-bb31-be5cba792d11}
 
 [Data_2]
 AllowMerge=true
