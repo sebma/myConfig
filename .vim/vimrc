@@ -20,6 +20,12 @@ nmap <F8> :TagbarToggle<CR>
 "nnoremap / /\v # enable Extended Regular Expression search
 "vnoremap / /\v
 
+function SortBashFunctions()
+	:g/^function /,/^}$/-1 s/\n/<linefeed>/
+	:sort /^function /
+	:%s/<linefeed>/\r/g
+endfunction
+
 "autocmd StdinReadPost * set buftype=nofile
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif "Remember last cursor position
 autocmd FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null "Pretty print XML when '=G' is pressed
