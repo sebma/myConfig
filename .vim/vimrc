@@ -25,6 +25,12 @@ function SortBashFunctionsByName()
 	:sort /^function /
 	:%s/<linefeed>/\r/g
 endfunction
+function ReIndent_XML_HTML()
+	:%!pup
+endfunction
+function ReIndent_JSON()
+	:%!jq .
+endfunction
 
 "autocmd StdinReadPost * set buftype=nofile
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif "Remember last cursor position
