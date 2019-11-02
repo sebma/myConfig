@@ -5,3 +5,5 @@ content-disposition=on
 check-certificate=off
 #verbose=off
 #user-agent=Mozilla
+cut-file-get-vars=on
+#cut-url-get-vars=on
