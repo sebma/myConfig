@@ -1,0 +1,8 @@
+#!/usr/bin/exo-open
+
+[Desktop Entry]
+Type=Application
+Name=castnowURLs
+Exec=~/myScripts/shl/castnowURLs.sh %U
+Terminal=false
+X-Desktop-File-Install-Version=0.22

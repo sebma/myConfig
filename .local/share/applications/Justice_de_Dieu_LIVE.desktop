@@ -1,0 +1,6 @@
+#!/usr/bin/env exo-open
+[Desktop Entry]
+Type=Application
+Name=LIVE Justice de Dieu
+Exec=mpv --profile=youtube-live,sd https://www.youtube.com/c/JusticedeDieuMinistry/live
+Terminal=false
