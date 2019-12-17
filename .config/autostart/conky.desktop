@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=
+Comment[en_IN]=
+Exec=sh "/home/sebastien/.conky/conky-startup.sh"
+Name=Conky
+Name[en_IN]=Conky
+NoDisplay=false
+Type=Application
+X-GNOME-Autostart-enabled=true

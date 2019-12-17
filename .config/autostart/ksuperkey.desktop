@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Allows you to open the application launcher using the Super key
+Exec=ksuperkey
+Name=ksuperkey
+NoDisplay=false
+Type=Application
+X-GNOME-Autostart-enabled=true
