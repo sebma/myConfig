@@ -1,1 +1,1 @@
-# deb http://downloads.metasploit.com/data/releases/metasploit-framework/apt lucid main
+deb https://apt.metasploit.com/ trusty main
