@@ -1,0 +1,10 @@
+[Unit]
+Description=On Resume
+After=suspend.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/logger -t suspend -s "on resume"
+
+[Install]
+WantedBy=suspend.target
