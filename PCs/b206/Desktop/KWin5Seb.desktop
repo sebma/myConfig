@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Kwin5
+Comment=Window Manager
+Exec=kcmshell5 kwincompositing kwindecoration kwinoptions kwinscreenedges kwintabbox desktop
+Icon=xfwm4
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
