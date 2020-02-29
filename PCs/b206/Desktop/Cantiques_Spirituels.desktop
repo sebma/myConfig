@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Name=LIVE Justice de Dieu
+Name=Cantiques Spirituels
 Exec=mpv --profile=sd https://www.youtube.com/playlist?list=PLDnReLaoW5Bv-ZudBAV4goh5P_VPRG4Ja
 Terminal=false
