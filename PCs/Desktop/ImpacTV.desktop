@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ImpacTV
+Comment=
+Exec=/usr/local/bin/impactv.sh
+Icon=minitube
+Path=~
+Terminal=true
+StartupNotify=false
