@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=3D
+Comment=
+Exec=/usr/local/bin/KWinStart.sh
+Icon=kwin
+Path=~
+Terminal=true
+StartupNotify=false
