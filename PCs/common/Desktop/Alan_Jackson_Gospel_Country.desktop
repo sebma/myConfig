@@ -1,0 +1,6 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Alan Jackson Gospel Country
+Exec=mpv --profile=sd https://www.youtube.com/playlist?list=PLRv5TPGK6KtyYx9B0ej4N_hWdcuE5pG5v
+Terminal=false
