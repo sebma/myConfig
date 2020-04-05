@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=NCC LIVE
-Exec=mpv --ytdl-format=93 https://www.youtube.com/user/NewCreationChurch/live
+Exec=mpv --ytdl-format=94 https://www.youtube.com/user/NewCreationChurch/live
 Terminal=false
