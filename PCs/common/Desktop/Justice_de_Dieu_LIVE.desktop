@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Name=LIVE Justice de Dieu
-Exec=mpv --profile=sd https://www.youtube.com/c/JusticedeDieuMinistry/live
+Name=LIVE JdD
+Exec=mpv --ytdl-format=93 https://www.youtube.com/c/JusticedeDieuMinistry/live
 Terminal=false
