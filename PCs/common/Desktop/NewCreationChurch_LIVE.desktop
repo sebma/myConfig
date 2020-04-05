@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Name=New Creation Church LIVE
+Name=NCC LIVE
 Exec=mpv --profile=sd https://www.youtube.com/user/NewCreationChurch/live
 Terminal=false
