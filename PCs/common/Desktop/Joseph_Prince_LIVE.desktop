@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=JP LIVE
-Exec=mpv --ytdl-format=94 https://www.youtube.com/user/JosephPrinceOnline/live
+Exec=mpv --no-resume-playback --ytdl-format=94 https://www.youtube.com/user/JosephPrinceOnline/live
 Terminal=false
