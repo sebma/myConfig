@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=Cantiques Spirituels
-Exec=mpv --profile=sd https://www.youtube.com/playlist?list=PLDnReLaoW5Bv-ZudBAV4goh5P_VPRG4Ja
+Exec=mpv --profile=sd,playlist https://www.youtube.com/playlist?list=PLDnReLaoW5Bv-ZudBAV4goh5P_VPRG4Ja
 Terminal=false
