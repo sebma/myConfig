@@ -3,7 +3,7 @@ Exec=smtube -url "http://www.tonvid.com/search.php?channelId=UCIXJjg_Ws_KucPYq5U
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=smtube
-Name=Gospel of Grace podcast Timothy and Lisa
+Name=Timothy Virge - Gospel of Grace podcast
 Type=Application
 Categories=Qt;KDE;AudioVideo;Player;Video;
 
@@ -47,7 +47,7 @@ Name[fa]=SMTube
 
 Comment[fr]=Naviguer et chercher sur YouTube
 GenericName[fr]=Navigateur YouTube pour SMPlayer
-Name[fr]=Gospel of Grace podcast Timothy and Lisa
+Name[fr]=Timothy Virge - Gospel of Grace podcast
 
 Comment[gl]=Navegar e buscar en YouTube
 GenericName[gl]=Navegador de YouTube para SMPlayer
