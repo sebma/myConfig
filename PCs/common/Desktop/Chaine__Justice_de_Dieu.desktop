@@ -3,7 +3,7 @@ Exec=smtube -url "http://www.tonvid.com/search.php?channelId=UCRO1GwyO5cRJvqxzXN
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=smtube
-Name=Justice de Dieu
+Name=Just.de D
 Type=Application
 Categories=Qt;KDE;AudioVideo;Player;Video;
 
@@ -47,7 +47,7 @@ Name[fa]=SMTube
 
 Comment[fr]=Naviguer et chercher sur YouTube
 GenericName[fr]=Navigateur YouTube pour SMPlayer
-Name[fr]=Justice de Dieu
+Name[fr]=Just.de D
 
 Comment[gl]=Navegar e buscar en YouTube
 GenericName[gl]=Navegador de YouTube para SMPlayer
