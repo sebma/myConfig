@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Name=JP LIVE
+Name=LIVE JP
 Exec=mpv --no-resume-playback --profile=fsd https://www.youtube.com/user/JosephPrinceOnline/live
 Terminal=false
