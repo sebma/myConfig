@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=LIVE JdD
-Exec=mpv --no-resume-playback --profile=fsd https://www.youtube.com/c/JusticedeDieuMinistry/live
+Exec=mpv --profile=fsd,live https://www.youtube.com/c/JusticedeDieuMinistry/live
 Terminal=false
