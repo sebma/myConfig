@@ -6,7 +6,7 @@ set listchars+=eol:¶
 set listchars+=nbsp:☠
 set title
 "set nopaste
-set nohls autoindent
+set nohls
 set noexpandtab tabstop=4 shiftwidth=4
 syntax on
 
@@ -68,6 +68,7 @@ set ruler
 set modeline
 set tags+=./tags;
 set incsearch "Search in 'real-time'
+set autoindent
 
 autocmd Filetype !vim %s/\%xa0//g
 "autocmd BufRead,BufNewFile * if &filetype != 'vim' | %s/\%xa0//g | endif
