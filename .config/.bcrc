@@ -1,2 +1,4 @@
+pi=4*a(1)
+e=e(1)
 define int(x) { auto oldscale; oldscale=scale; scale=0; x=x/1; scale=oldscale; return( x ); }
 define fmod(x,y) { auto oldscale; oldscale=scale; scale=1000; x = x - y * int(x/y); scale=oldscale; return( x ); }
