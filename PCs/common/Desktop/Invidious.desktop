@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=smtube -url "https://invidio.us/"
+Comment=Browse and search videos from YouTube
+GenericName=YouTube Browser for SMPlayer
+Icon=smtube
+Name=Invidious
+Type=Application
+Categories=Qt;KDE;AudioVideo;Player;Video;
