@@ -5,8 +5,7 @@ set listchars+=eol:¶
 "vim --version | grep "\+multi_byte"
 set listchars+=nbsp:☠
 set title
-"set nopaste
-set nohls
+set nohls autoindent
 set noexpandtab tabstop=4 shiftwidth=4
 syntax on
 
@@ -63,12 +62,10 @@ Plug 'goerz/ipynb_notedown.vim'
 Plug 'ivanov/vim-ipython'
 call plug#end()
 
-set paste
 set ruler
 set modeline
 set tags+=./tags;
 set incsearch "Search in 'real-time'
-set autoindent
 
 autocmd Filetype !vim %s/\%xa0//g
 "autocmd BufRead,BufNewFile * if &filetype != 'vim' | %s/\%xa0//g | endif
