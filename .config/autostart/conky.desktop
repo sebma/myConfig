@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment=
 Comment[en_IN]=
-Exec=sh "/home/sebastien/myScripts/shl/conky_restart.sh"
+Exec=sh "sleep 30;/home/sebastien/myScripts/shl/conky_restart.sh"
 Name=Conky
 Name[en_IN]=Conky
 NoDisplay=false
