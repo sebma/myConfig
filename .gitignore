@@ -7,3 +7,4 @@ watch_later/
 .*.swp
 *.save
 smtube2.ini
+.config/mpv/mpv.conf
