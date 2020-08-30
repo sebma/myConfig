@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=Vids JdD
-Exec=mpv --profile=sd https://www.youtube.com/c/JusticedeDieuMinistry/videos
+Exec=mpv --profile=sd https://www.youtube.com/JusticedeDieuMinistry/videos
 Terminal=false
