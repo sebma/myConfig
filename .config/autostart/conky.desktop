@@ -1,9 +1,9 @@
 [Desktop Entry]
-Comment=
-Comment[en_IN]=
-Exec=sh "/home/sebastien/myScripts/shl/conky_restart.sh"
-Name=Conky
-Name[en_IN]=Conky
-NoDisplay=false
 Type=Application
+Exec=sh "/usr/local/bin/conky-startup.sh"
+Hidden=false
+NoDisplay=false
 X-GNOME-Autostart-enabled=true
+Name=Conky
+Comment=
+
