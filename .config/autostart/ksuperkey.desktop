@@ -1,3 +1,4 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Comment=Allows you to open the application launcher using the Super key
 Exec=ksuperkey
