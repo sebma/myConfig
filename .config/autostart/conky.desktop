@@ -1,6 +1,7 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Exec=sh "/usr/local/bin/conky-startup.sh"
+Exec=conky -p 15 -d
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
