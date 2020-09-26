@@ -13,7 +13,7 @@ background yes
 # Use Xft?
 use_xft yes
 # Xft font when Xft is enabled
-xftfont Bitstream Vera Sans Mono:size=11
+xftfont Bitstream Vera Sans Mono:size=10.5
 # Text alpha when using Xft
 xftalpha 0.8
 # Update interval in seconds
