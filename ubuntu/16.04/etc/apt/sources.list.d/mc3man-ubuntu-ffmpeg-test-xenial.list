@@ -1,0 +1,3 @@
+deb http://ppa.launchpad.net/mc3man/ffmpeg-test/ubuntu xenial main # disabled on upgrade to xenial
+# deb-src http://ppa.launchpad.net/mc3man/ffmpeg-test/ubuntu xenial main
+# deb-src http://ppa.launchpad.net/mc3man/ffmpeg-test/ubuntu xenial main

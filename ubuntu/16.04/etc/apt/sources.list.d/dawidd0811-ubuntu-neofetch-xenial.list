@@ -1,0 +1,2 @@
+deb http://ppa.launchpad.net/dawidd0811/neofetch/ubuntu xenial main # disabled on upgrade to xenial
+# deb-src http://ppa.launchpad.net/dawidd0811/neofetch/ubuntu xenial main

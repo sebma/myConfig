@@ -1,0 +1,2 @@
+deb http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_16.04/ / # disabled on upgrade to xenial
+deb http://download.opensuse.org/repositories/home:/stevenpusser/Debian_9.0/ / # disabled on upgrade to xenial
