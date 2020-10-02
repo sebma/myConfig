@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/mc3man/mpv-tests/ubuntu xenial main # disabled on upgrade to xenial disabled on upgrade to xenial
+deb http://ppa.launchpad.net/mc3man/mpv-tests/ubuntu xenial main
 # deb-src http://ppa.launchpad.net/mc3man/mpv-tests/ubuntu xenial main

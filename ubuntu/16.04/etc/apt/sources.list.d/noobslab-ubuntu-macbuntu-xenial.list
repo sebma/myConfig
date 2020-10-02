@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/noobslab/macbuntu/ubuntu xenial main # disabled on upgrade to xenial
+deb http://ppa.launchpad.net/noobslab/macbuntu/ubuntu xenial main
 # deb-src http://ppa.launchpad.net/noobslab/macbuntu/ubuntu xenial main
