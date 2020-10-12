@@ -1,0 +1,3 @@
+#!sudoedit
+Defaults        env_reset,pwfeedback
+%sudo   ALL=(ALL) ALL
