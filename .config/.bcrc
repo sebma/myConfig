@@ -5,3 +5,4 @@ phi=(1+sqrt(5))/2
 define int(x) { auto oldscale; oldscale=scale; scale=0; x=x/1; scale=oldscale; return( x ); }
 #define fmod(x,y) { auto oldscale; oldscale=scale; scale=1000; x = x - y * int(x/y); scale=oldscale; return( x ); }
 define mod(x,y) { auto oldscale; oldscale=scale; scale=0; x = x%y; scale=oldscale; return( x ); }
+define pow(x,y) { if (scale(y) == 0) return (x ^ y); return ( e( y * l(x) ) ); }
