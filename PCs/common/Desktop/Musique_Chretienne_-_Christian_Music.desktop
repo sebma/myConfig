@@ -1,0 +1,6 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Musique Chrétienne - Christian Music
+Exec=mpv --profile=sd,playlist https://www.youtube.com/playlist?list=PLRv5TPGK6KtzA8q6I1ohnKEedQ_MFFpiU
+Terminal=false
