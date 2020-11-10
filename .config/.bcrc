@@ -7,3 +7,6 @@ define int(x) { auto oldscale; oldscale=scale; scale=0; x=x/1; scale=oldscale; r
 define mod(x,y) { auto oldscale; oldscale=scale; scale=0; x = x%y; scale=oldscale; return( x ); }
 define pow(x,y) { if (scale(y) == 0) return (x ^ y); return ( e( y * l(x) ) ); }
 define facto(x) { if (x <= 1) return (1); return (facto(x-1) * x); }
+define ln(x) { l(x); }
+define l2(x) { l(x)/l(2); }
+define l10(x) { l(x)/l(10); }
