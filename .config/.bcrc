@@ -10,5 +10,10 @@ define mod(x,y) { auto oldscale; oldscale=scale; scale=0; x = x%y; scale=oldscal
 define pow(x,y) { if (scale(y) == 0) return (x ^ y); return ( e( y * l(x) ) ); }
 define facto(x) { if (x <= 1) return (1); return (facto(x-1) * x); }
 define ln(x) { return l(x); }
+
 define l2(x) { return( l(x)/l(2) ); }
+define ln2(x) { return l2(x); }
 define l10(x) { return( l(x)/l(10) ); }
+define ln10(x) { return l10(x); }
+define l16(x) { return( l(x)/l(16) ); }
+define ln16(x) { return l16(x); }
