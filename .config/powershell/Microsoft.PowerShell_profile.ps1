@@ -2,7 +2,7 @@
 #
 function osFamily {
 #	$platform = [System.Environment]::OSVersion.Platform
-	if ($IsWindows -or $env:OSRelease) {
+	if ($IsWindows -or $env:OS) {
 		$osFamily = "Windows"
 	} else {
 		$osFamily = (uname -s)
@@ -52,12 +52,13 @@ function osVersion {
 $osFamily = (osFamily)
 $OSVersion = (osVersion)
 
-if( $osFamily -eq "Windows" ) { Write-Host "Windows $OSVersion" -foregroundcolor Green }
+#if( $osFamily -eq "Windows" ) { Write-Host "Windows $OSVersion" -foregroundcolor Green }
 
 $dirSep = [io.path]::DirectorySeparatorChar
 
-if( $IsWindows ) {
+if( $osFamily -eq "Windows" ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
+
 	Set-Alias  ex
 	function ex{exit}
 
@@ -67,12 +68,13 @@ if( $IsWindows ) {
 	function cdh{pushd $HOME}
 	function cd-{popd}
 	function which($command) { (gcm $command).source }
-} elseif( $IsLinux ) {
-	$PowerShellUserConfigDIR="$HOME/.config/powershell"
-} elseif( $IsMacOS ) {
-	echo TO BE DONE
+} elseif( $osFamily -eq "Linux" ) {
+	# TO BE DONE
+} elseif( $osFamily -eq "Darwin" ) {
+	# TO BE DONE
 }
 
+$PowerShellUserConfigDIR = Split-Path $PROFILE
 Import-Alias "$PowerShellUserConfigDIR/seb_${osFamily}_aliases.ps1"
 
 function Prompt {
