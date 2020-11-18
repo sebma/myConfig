@@ -5,12 +5,12 @@ function osFamily {
 	if ($IsWindows -or $env:OS) {
     	$osFamily = "Windows"
 	} else {
-	    $osFamily = uname -s
+	    $osFamily = (uname -s)
 	}
 	return $osFamily
 }
 
-$osFamily = osFamily
+$osFamily = (osFamily)
 
 if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
