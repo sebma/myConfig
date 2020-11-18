@@ -12,16 +12,19 @@ function osFamily {
 
 $osFamily = (osFamily)
 
+$dirSep = [io.path]::DirectorySeparatorChar
+
 if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
 	Set-Alias  ex
 	function ex{exit}
 
-	function dirname($path) { (dir $path).directoryname }
-	function basename($path) { (dir $path).name }
+	function dirname($path) { Split-Path -Path $path }
+	function basename($path) { $path.split($dirSep)[-1] }
 	function cds($p){if($p -eq "-"){popd} else {pushd $p}}
 	function cdh{pushd $HOME}
 	function cd-{popd}
+	function which($command) { (gcm $command).source }
 } elseif( $IsLinux ) {
 	$PowerShellUserConfigDIR="$HOME/.config/powershell"
 } elseif( $IsMacOS ) {
@@ -31,7 +34,7 @@ if( $IsWindows ) {
 Import-Alias "$PowerShellUserConfigDIR/seb_${osFamily}_aliases.ps1"
 
 function Prompt {
-    $mywd = (pwd).Path
+    $mywd = (pwd).path
     $mywd = $mywd.Replace( $HOME, '~' )
 #    $PSHVersion = $PSVersionTable.PSVersion.ToString()
     $PSHVersion = ""+$PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor
