@@ -1,18 +1,21 @@
 # $HOME/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 #
-function osFamily {
+function uname {
 	$platform = [System.Environment]::OSVersion.Platform
-	if( $platform = "Unix" ) { $osFamily = "Linux" }
+	if( $IsWindows ) { $osFamily = "Windows" }
+	elseif( $IsLinux ) { $osFamily = "Linux" }
+	elseif( $IsMacOS ) { $osFamily = "Darwin" }
 	return $osFamily
 }
 
-$osFamily = osFamily
-if( $osFamily -eq "Linux" ) {
-	$PowerShellUserConfigDIR="$HOME/.config/powershell"
-} elseif( $osFamily -eq "Windows" ) {
+$osFamily = uname
+
+if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
 	Set-Alias  ex
-} elseif( $osFamily -eq "Darwin" ) {
+} elseif( $IsLinux ) {
+	$PowerShellUserConfigDIR="$HOME/.config/powershell"
+} elseif( $IsMacOS ) {
 	echo TO BE DONE
 }
 
