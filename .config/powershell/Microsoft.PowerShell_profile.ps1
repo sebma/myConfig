@@ -1,12 +1,12 @@
 # $HOME/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 #
 function osFamily {
+#	$platform = [System.Environment]::OSVersion.Platform
 	if ($IsWindows -or $env:OS) {
     	$osFamily = "Windows"
 	} else {
 	    $osFamily = uname -s
 	}
-#	$platform = [System.Environment]::OSVersion.Platform
 	return $osFamily
 }
 
