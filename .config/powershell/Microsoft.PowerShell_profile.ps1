@@ -15,6 +15,13 @@ $osFamily = (osFamily)
 if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
 	Set-Alias  ex
+	function ex{exit}
+
+	function dirname($path) { (dir $path).directoryname }
+	function basename($path) { (dir $path).name }
+	function cds($p){if($p -eq "-"){popd} else {pushd $p}}
+	function cdh{pushd $HOME}
+	function cd-{popd}
 } elseif( $IsLinux ) {
 	$PowerShellUserConfigDIR="$HOME/.config/powershell"
 } elseif( $IsMacOS ) {
@@ -41,10 +48,6 @@ function gitUpdate {
 	if( $osFamily -eq "Linux"){sync}
 }
 
-function ex{exit}
-function cds($p){if($p -eq "-"){popd} else {pushd $p}}
-function cdh{pushd $HOME}
-function cd-{popd}
 function ..{pushd ..}
 function ...{pushd ../..}
 function ....{pushd ../../..}
