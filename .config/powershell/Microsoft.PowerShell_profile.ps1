@@ -1,7 +1,8 @@
 # $HOME/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 #
 function osFamily {
-	$osFamily = "Linux"
+	$platform = [System.Environment]::OSVersion.Platform
+	if( $platform = "Unix" ) { $osFamily = "Linux" }
 	return $osFamily
 }
 
@@ -12,7 +13,7 @@ if( $osFamily -eq "Linux" ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
 	Set-Alias  ex
 } elseif( $osFamily -eq "Darwin" ) {
-	echo TO DO
+	echo TO BE DONE
 }
 
 Import-Alias "$PowerShellUserConfigDIR/seb_${osFamily}_aliases.ps1"
@@ -34,7 +35,6 @@ function gitUpdate {
 	git pull
 	if( $osFamily -eq "Linux"){sync}
 }
-
 
 function ex{exit}
 function cds($p){if($p -eq "-"){popd} else {pushd $p}}
