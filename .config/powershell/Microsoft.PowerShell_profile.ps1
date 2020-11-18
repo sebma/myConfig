@@ -21,10 +21,10 @@ function Prompt {
     $mywd = (pwd).Path
     $mywd = $mywd.Replace( $HOME, '~' )
 #    $PSHVersion = $PSVersionTable.PSVersion.ToString()
-    $PSHVersion = [String]$PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor
+    $PSHVersion = ""+$PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor
     Write-Host "[$osFamily] " -NoNewline -ForegroundColor DarkRed
     Write-Host "PSv$PSHVersion " -NoNewline -ForegroundColor DarkBlue
-    Write-Host ("" + $mywd + ">") -NoNewline -ForegroundColor Green
+    Write-Host "$mywd>" -NoNewline -ForegroundColor Green
     return " "
 }
 
