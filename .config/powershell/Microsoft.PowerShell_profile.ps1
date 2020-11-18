@@ -6,12 +6,12 @@ function osFamily {
 }
 
 $osFamily = osFamily
-if( $osFamily -eq "Linux") {
+if( $osFamily -eq "Linux" ) {
 	$PowerShellUserConfigDIR="$HOME/.config/powershell"
-} elseif( $osFamily -eq "Windows") {
+} elseif( $osFamily -eq "Windows" ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
 	Set-Alias  ex
-} elseif( $osFamily -eq "Darwin") {
+} elseif( $osFamily -eq "Darwin" ) {
 	echo TO DO
 }
 
