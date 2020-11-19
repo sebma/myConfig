@@ -1,11 +1,38 @@
 # $HOME/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 #
 function osFamily {
-#	$platform = [System.Environment]::OSVersion.Platform
-	if ($IsWindows -or $env:OS) {
-		$osFamily = "Windows"
+	$platform = [System.Environment]::OSVersion.Platform
+	if( !(Test-Path variable:IsWindows) ) {
+		# $IsWindows is not defined, let's define it
+		$IsWindows = $false -or $env:OS
+		if( $platform -eq "Win32NT" ) {
+			$osFamily = "Windows"
+			$IsLinux = $false
+			$IsMacOS = $false
+		} elseif( $platform -eq "Unix" ) {
+			$osFamily = (uname -s)
+			if( $osFamily -eq "Linux" ) {
+				$IsLinux = $true
+				$IsMacOS = $false
+			} elseif( $osFamily -eq "Darwin" ) {
+				$IsLinux = $false
+				$IsMacOS = $true
+			} else {
+				$osFamily = "NOT_SUPPORTED"
+				$IsLinux = $false
+				$IsMacOS = $false
+			}
+		} else {
+			$osFamily = "NOT_SUPPORTED"
+			$IsLinux = $false
+			$IsMacOS = $false
+		}
 	} else {
-		$osFamily = (uname -s)
+		#Using PSv>5.1 where these variables are already defined
+		if( $IsWindows )   { $osFamily = "Windows" }
+		elseif( $IsLinux ) { $osFamily = "Linux" }
+		elseif( $IsMacOS ) { $osFamily = "Darwin" }
+		else { $osFamily = "NOT_SUPPORTED" }
 	}
 	return $osFamily
 }
@@ -52,11 +79,8 @@ function osVersion {
 $osFamily = (osFamily)
 $OSVersion = (osVersion)
 
-#if( $osFamily -eq "Windows" ) { Write-Host "Windows $OSVersion" -foregroundcolor Green }
-
 $dirSep = [io.path]::DirectorySeparatorChar
-
-if( $osFamily -eq "Windows" ) {
+if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
 
 	Set-Alias  ex
@@ -68,9 +92,9 @@ if( $osFamily -eq "Windows" ) {
 	function cdh{pushd $HOME}
 	function cd-{popd}
 	function which($command) { (gcm $command).source }
-} elseif( $osFamily -eq "Linux" ) {
+} elseif( $IsLinux ) {
 	# TO BE DONE
-} elseif( $osFamily -eq "Darwin" ) {
+} elseif( $IsMacOS ) {
 	# TO BE DONE
 }
 
@@ -92,7 +116,7 @@ function gitUpdate {
 	echo "=> Updating from : "
 	git config remote.origin.url
 	git pull
-	if( $osFamily -eq "Linux"){sync}
+	if( $IsLinux ){sync}
 }
 
 function ..{pushd ..}
