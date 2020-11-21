@@ -82,6 +82,7 @@ $OSVersion = (osVersion)
 $dirSep = [io.path]::DirectorySeparatorChar
 if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
+	if( ! (alias | select-string wget) ) { set-alias wget Invoke-WebRequest }
 
 	Set-Alias  ex
 	function ex{exit}
