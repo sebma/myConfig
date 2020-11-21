@@ -1,11 +1,11 @@
 # $HOME/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 #
 function osFamily {
-	$platform = [System.Environment]::OSVersion.Platform
 	if( !(Test-Path variable:IsWindows) ) {
 		# $IsWindows is not defined, let's define it
-		$IsWindows = Test-Path env:OS
-		if( $platform -eq "Win32NT" ) {
+		$platform = [System.Environment]::OSVersion.Platform
+		$IsWindows = $platform -eq "Win32NT"
+		if( $IsWindows ) {
 			$osFamily = "Windows"
 			$IsLinux = $false
 			$IsMacOS = $false
