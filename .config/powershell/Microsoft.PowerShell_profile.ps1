@@ -91,7 +91,7 @@ if( $IsWindows ) {
 	function cds($p){if($p -eq "-"){popd} else {pushd $p}}
 	function cdh{pushd $HOME}
 	function cd-{popd}
-	function which($command) { (gcm $command).source }
+	function which($command) { (gcm $command).definition }
 } elseif( $IsLinux ) {
 	# TO BE DONE
 } elseif( $IsMacOS ) {
