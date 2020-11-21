@@ -27,14 +27,15 @@ function osFamily {
 			$IsLinux = $false
 			$IsMacOS = $false
 		}
+		return $IsWindows, $IsLinux, $IsMacOS, $osFamily
 	} else {
 		#Using PSv>5.1 where these variables are already defined
 		if( $IsWindows )   { $osFamily = "Windows" }
 		elseif( $IsLinux ) { $osFamily = "Linux" }
 		elseif( $IsMacOS ) { $osFamily = "Darwin" }
 		else { $osFamily = "NOT_SUPPORTED" }
+		return $osFamily
 	}
-	return $osFamily
 }
 
 function osVersion {
@@ -76,7 +77,8 @@ function osVersion {
 	return $OSRelease
 }
 
-$osFamily = (osFamily)
+if( !(Test-Path variable:IsWindows) ) { $IsWindows, $IsLinux, $IsMacOS, $osFamily = osFamily } else { $osFamily = osFamily }
+
 $OSVersion = (osVersion)
 
 $dirSep = [io.path]::DirectorySeparatorChar
