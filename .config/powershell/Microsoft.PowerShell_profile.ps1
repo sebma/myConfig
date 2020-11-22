@@ -76,7 +76,7 @@ function osVersion {
 
 if( !(Test-Path variable:IsWindows) ) { $IsWindows, $IsLinux, $IsMacOS, $osFamily = osFamily } else { $osFamily = osFamily }
 
-$OSVersion = (osVersion)
+if( $IsWindows ) { $OSVersion = (osVersion) }
 
 $dirSep = [io.path]::DirectorySeparatorChar
 if( $IsWindows ) {
@@ -101,14 +101,21 @@ if( $IsWindows ) {
 $PowerShellUserConfigDIR = Split-Path $PROFILE
 Import-Alias "$PowerShellUserConfigDIR/seb_${osFamily}_aliases.ps1"
 
+$hostname = hostname
+if( $IsLinux -or $IsMacOS ) { $username = $env:USER } elseif( $IsWindows ) { $username = $env:USERNAME }
+$domain = "local"
+
 function Prompt {
 	$mywd = (pwd).path
 	$mywd = $mywd.Replace( $HOME, '~' )
 #	$PSHVersion = $PSVersionTable.PSVersion.ToString()
 	$PSHVersion = ""+$PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor
-	Write-Host "[$osFamily] " -NoNewline -ForegroundColor DarkRed
-	Write-Host "PSv$PSHVersion " -NoNewline -ForegroundColor DarkBlue
-	Write-Host "$mywd>" -NoNewline -ForegroundColor Green
+	Write-Host "$username : " -NoNewline
+	Write-Host "$hostname " -NoNewline -ForegroundColor Yellow
+	Write-Host "@ $domain / " -NoNewline -ForegroundColor Red
+	Write-Host "$osFamily $OSRelease" -NoNewline -ForegroundColor Green
+	Write-Host "PSv$PSHVersion " -NoNewline -ForegroundColor Blue
+	Write-Host "$mywd>" -ForegroundColor Green
 	return " "
 }
 
