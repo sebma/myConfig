@@ -92,6 +92,7 @@ if( $IsWindows ) {
 	function cdh{pushd $HOME}
 	function cd-{popd}
 	function which($command) { (gcm $command).definition }
+	function { rundll32.exe user32.dll,LockWorkStation }
 } elseif( $IsLinux ) {
 	# TO BE DONE
 } elseif( $IsMacOS ) {
