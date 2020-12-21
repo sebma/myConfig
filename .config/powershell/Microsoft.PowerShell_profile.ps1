@@ -81,6 +81,12 @@ if( $IsWindows ) { $OSVersion = (osVersion) }
 $dirSep = [io.path]::DirectorySeparatorChar
 if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
+	set-alias np notepad.exe
+	set-alias ytdl youtube-dl.exe
+	function speedtestDownloadSingle { time speedtest --single --bytes --no-upload }
+	function speedtestDownloadSimple { time speedtest --simple --bytes --no-upload }
+	function speedtestSimple { time speedtest --simple --bytes }
+	function speedtestSingle { time speedtest --single --bytes }
 	if( ! (alias | select-string wget) ) { set-alias wget Invoke-WebRequest }
 
 	Set-Alias  ex
@@ -92,7 +98,8 @@ if( $IsWindows ) {
 	function cdh{pushd $HOME}
 	function cd-{popd}
 	function which($command) { (gcm $command).definition }
-	function { rundll32.exe user32.dll,LockWorkStation }
+	function lock { rundll32.exe user32.dll,LockWorkStation }
+	function windowsCaption { (gwmi -class Win32_OperatingSystem).Caption }
 } elseif( $IsLinux ) {
 	# TO BE DONE
 } elseif( $IsMacOS ) {
