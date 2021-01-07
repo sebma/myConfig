@@ -1,13 +1,13 @@
-#!/usr/bin/env xdg-open
 [Desktop Entry]
-Type=Application
-Name=AnyDesk
-GenericName=AnyDesk
-X-GNOME-FullName=AnyDesk
+Categories=Network;GTK;
 Exec=/usr/bin/anydesk --tray %u
+GenericName=AnyDesk
+Hidden=true
 Icon=anydesk
+MimeType=x-scheme-handler/anydesk;
+Name=AnyDesk
+Name[de_DE]=AnyDesk
 Terminal=false
 TryExec=anydesk
-Categories=Network;GTK;
-MimeType=x-scheme-handler/anydesk;
-Name[de_DE]=AnyDesk
+Type=Application
+X-GNOME-FullName=AnyDesk
