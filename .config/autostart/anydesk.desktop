@@ -1,6 +1,6 @@
 [Desktop Entry]
 Categories=Network;GTK;
-Exec=/usr/bin/anydesk --tray %u
+Exec=anydesk --tray %u
 GenericName=AnyDesk
 Hidden=true
 Icon=anydesk
