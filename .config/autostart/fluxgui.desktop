@@ -1,7 +1,7 @@
 [Desktop Entry]
-Icon=fluxgui
-Type=Application
-Name=f.lux indicator applet
-X-GNOME-Autostart-enabled=true
 Exec=fluxgui
-
+Hidden=true
+Icon=fluxgui
+Name=f.lux indicator applet
+Type=Application
+X-GNOME-Autostart-enabled=true
