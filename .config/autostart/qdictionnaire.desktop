@@ -1,0 +1,24 @@
+[Desktop Entry]
+Categories=Application;Office;
+Comment[en_US]=Dictionnaire de la langue française et de rimes
+Comment=Dictionnaire de la langue française et de rimes
+Encoding=UTF-8
+Exec=qdictionnaire
+GenericName[en_US]=qdictionnaire
+GenericName=qdictionnaire
+Hidden=true
+Icon=/usr/share/qdictionnaire/qdictionnaire.svg
+MimeType=
+Name[en_US]=qdictionnaire
+Name=qdictionnaire
+Name[fr_FR]=qdictionnaire
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=3.0
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
