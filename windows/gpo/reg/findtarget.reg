@@ -1,0 +1,15 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\Directory\shell\Open File Location]
+@="&Open File Location"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\Directory\shell\Open File Location\command]
+@="\"explorer.exe\" /select,\"%1\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\*\shell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\*\shell\Open File Location]
+@="&Open File Location"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\*\shell\Open File Location\command]
+@="\"explorer.exe\" /select,\"%1\""

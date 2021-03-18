@@ -1,0 +1,119 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins]
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@adobe.com/FlashPlayer]
+"Path"="C:\\WINDOWS\\system32\\Macromed\\Flash\\NPSWF32.dll"
+"ProductName"="Adobe Flash Player 10.1 Plugin"
+"Vendor"="Adobe Systems Incorporated"
+"Description"="Adobe® Flash® Player 10.1 Plugin"
+"Version"="10.2.153.1"
+"XPTPath"="C:\\WINDOWS\\system32\\Macromed\\Flash\\flashplayer.xpt"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@adobe.com/ShockwavePlayer]
+"Description"="Adobe Shockwave Player"
+"Vendor"="Adobe Systems Inc"
+"Path"="C:\\WINDOWS\\system32\\Adobe\\Director\\np32dsw.dll"
+"Version"="1158612"
+"ProductName"="Adobe Shockwave Player"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@adobe.com/ShockwavePlayer\MimeTypes]
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@adobe.com/ShockwavePlayer\MimeTypes\application/x-director]
+"Suffixes"="dir,dcr,dxr"
+"Description"="Adobe Shockwave Movie"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@adobe.com/ShockwavePlayer\Suffixes]
+"dir"=""
+"dxr"=""
+"dcr"=""
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin]
+"Description"="Oracle® Next Generation Java™ Plug-In"
+"GeckoVersion"="1.9"
+"Path"="C:\\Program Files\\Java\\jre6\\bin\\new_plugin\\npjp2.dll"
+"ProductName"="Oracle® Java™ Plug-In"
+"Vendor"="Oracle Corp."
+"Version"="160_24"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes]
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;jpi-version=160_24]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.1]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.1.1]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.1.2]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.1.3]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.2]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.2.1]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.3]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.3.1]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.4]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.4.1]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.4.2]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.5]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-applet;version=1.6]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-vm]
+"Description"="Java™ Virtual Machine"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@java.com/JavaPlugin\MimeTypes\application/x-java-vm-npruntime]
+"Description"="Java™ Applet"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@microsoft.com/WPF,version=3.5]
+"Description"="Windows Presentation Foundation plug-in for Mozilla browsers"
+"GeckoVersion"="1.7.2"
+"Path"="c:\\WINDOWS\\Microsoft.NET\\Framework\\v3.5\\Windows Presentation Foundation\\NPWPF.dll"
+"ProductName"="Windows Presentation Foundation"
+"Vendor"="Microsoft Corp."
+"Version"="3.5"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@microsoft.com/WPF,version=3.5\MimeTypes]
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@microsoft.com/WPF,version=3.5\MimeTypes\application/x-ms-xbap]
+"Description"="XAML Browser Application (XBAP)"
+"Suffixes"="xbap"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@microsoft.com/WPF,version=3.5\MimeTypes\application/xaml+xml]
+"Description"="XAML Document"
+"Suffixes"="xaml"
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@microsoft.com/WPF,version=3.5\Suffixes]
+"xbap"=""
+"xaml"=""
+
+[HKEY_LOCAL_MACHINE\software\mozillaplugins\@mozilla.zeniko.ch/SumatraPDF_Browser_Plugin]
+"Description"="SumatraPDF Browser Plugin"
+"Path"="C:\\Program Files\\SumatraPDF\\npPdfViewer.dll"
+"Version"="0"
+"ProductName"="SumatraPDF Browser Plugin"
+

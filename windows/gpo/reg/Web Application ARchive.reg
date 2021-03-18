@@ -1,0 +1,16 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Classes\.war]
+@="war_auto_file"
+
+[HKEY_CURRENT_USER\Software\Classes\war_auto_file]
+@="Web Application ARchive"
+
+[HKEY_CURRENT_USER\Software\Classes\war_auto_file\shell]
+@=""
+
+[HKEY_CURRENT_USER\Software\Classes\war_auto_file\shell\open]
+@=""
+
+[HKEY_CURRENT_USER\Software\Classes\war_auto_file\shell\open\command]
+@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""

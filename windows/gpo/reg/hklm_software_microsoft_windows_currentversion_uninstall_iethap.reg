@@ -1,0 +1,31 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\software\microsoft\windows\currentversion\uninstall\{B0E1A251-2E54-4006-A3D6-6954383DDA6B}]
+"AuthorizedCDFPrefix"=""
+"Comments"=""
+"Contact"="Not Available"
+"DisplayVersion"="0008.000.0000"
+"HelpLink"=hex(2):4e,6f,74,20,41,76,61,69,6c,61,62,6c,65,00
+"HelpTelephone"="Not Available"
+"InstallDate"="20120329"
+"InstallLocation"="C:\\Program Files\\Microsoft\\Internet Explorer (ThinApp)\\8.0\\"
+"InstallSource"="\\\\nasdef005\\tld$\\METIERS\\A_MCSFT_IETHAP_0008-000-0000-10_C2413831MSI\\"
+"ModifyPath"=hex(2):4d,73,69,45,78,65,63,2e,65,78,65,20,2f,58,7b,42,30,45,31,\
+  41,32,35,31,2d,32,45,35,34,2d,34,30,30,36,2d,41,33,44,36,2d,36,39,35,34,33,\
+  38,33,44,44,41,36,42,7d,00
+"NoModify"=dword:00000001
+"Publisher"="Not Available"
+"Readme"=hex(2):4e,6f,74,20,41,76,61,69,6c,61,62,6c,65,00
+"Size"=""
+"EstimatedSize"=dword:000720e0
+"UninstallString"=hex(2):4d,73,69,45,78,65,63,2e,65,78,65,20,2f,58,7b,42,30,45,\
+  31,41,32,35,31,2d,32,45,35,34,2d,34,30,30,36,2d,41,33,44,36,2d,36,39,35,34,\
+  33,38,33,44,44,41,36,42,7d,00
+"URLInfoAbout"="Not Available"
+"URLUpdateInfo"="Not Available"
+"VersionMajor"=dword:00000008
+"VersionMinor"=dword:00000000
+"WindowsInstaller"=dword:00000001
+"Version"=dword:08000000
+"Language"=dword:0000040c
+"DisplayName"="A_MCSFT_IETHAP_0008-000-0000-10_C2413831"

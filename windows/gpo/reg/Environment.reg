@@ -1,0 +1,13 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Environment]
+"dircmd"="/ogen/-c"
+"home"=hex(2):25,75,73,65,72,70,72,6f,66,69,6c,65,25,00
+"MOZ_PLUGIN_PATH"="C:\\Program Files\\SumatraPDF\\"
+"PATH"="C:\\Program Files\\Fichiers communs\\OTG;C:\\Program Files\\CA\\Dcs\\DMScripting\\;C:\\Program Files\\CA\\DCS\\CAWIN\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;c:\\program files\\walldata\\shared\\system;R:\\SQL\\BIN;R:\\ORAWIN95\\BIN;C:\\ARPEGE\\TNGSD\\BIN;;C:\\Program Files\\WinMerge;C:\\Program Files\\Fichiers communs\\OTG;C:\\Program Files\\CA\\Dcs\\DMScripting\\;C:\\Program Files\\CA\\DCS\\CAWIN\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;c:\\program files\\walldata\\shared\\system;R:\\SQL\\BIN;R:\\ORAWIN95\\BIN;C:\\ARPEGE\\TNGSD\\BIN;;C:\\Program Files\\WinMerge;C:\\Program Files\\Fichiers communs\\OTG;C:\\Program Files\\CA\\Dcs\\DMScripting\\;C:\\Program Files\\CA\\DCS\\CAWIN\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;c:\\program files\\walldata\\shared\\system;R:\\SQL\\BIN;R:\\ORAWIN95\\BIN;C:\\ARPEGE\\TNGSD\\BIN;;C:\\Program Files\\WinMerge;C:\\Program Files\\Fichiers communs\\OTG;C:\\Program Files\\CA\\Dcs\\DMScripting\\;C:\\Program Files\\CA\\DCS\\CAWIN\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;c:\\program files\\walldata\\shared\\system;R:\\SQL\\BIN;R:\\ORAWIN95\\BIN;C:\\ARPEGE\\TNGSD\\BIN;;C:\\Program Files\\WinMerge;C:\\Documents and Settings\\x064304\\cm;P:\\bin;P:\\cm"
+"pathext"=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL;.msc;.cpl"
+"prompt"=hex(2):5b,24,53,25,75,73,65,72,6e,61,6d,65,25,24,53,40,24,53,25,63,6f,\
+  6d,70,75,74,65,72,6e,61,6d,65,25,24,53,24,50,5d,24,5f,24,24,24,53,00
+"TEMP"=hex(2):43,3a,5c,41,52,50,45,47,45,5c,74,6d,70,00
+"TMP"=hex(2):43,3a,5c,41,52,50,45,47,45,5c,74,6d,70,00
+
