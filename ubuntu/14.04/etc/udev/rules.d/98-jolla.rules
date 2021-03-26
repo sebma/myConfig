@@ -1,1 +1,0 @@
-SUBSYSTEM=="net", ACTION=="add|change", ENV{ID_VENDOR}=="Jolla", ENV{ID_VENDOR_ID}=="2931", RUN+="/sbin/ip address add 192.168.3.14/31 dev $env{INTERFACE}" 
