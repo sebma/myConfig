@@ -1,0 +1,4 @@
+deb http://fr.archive.ubuntu.com/ubuntu/ xenial main universe restricted multiverse
+deb http://security.ubuntu.com/ubuntu/ xenial-security restricted main universe multiverse
+deb http://fr.archive.ubuntu.com/ubuntu/ xenial-backports restricted main universe multiverse
+deb http://fr.archive.ubuntu.com/ubuntu/ xenial-updates restricted main universe multiverse
