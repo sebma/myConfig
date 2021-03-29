@@ -1,0 +1,10 @@
+<keymap>
+  <Global>
+    <mouse>
+      <wheeldown>VolumeDown</wheeldown>
+      <wheelup>VolumeUp</wheelup>
+      <rightclick>Pause</rightclick>
+      <middleclick>Mute</middleclick>
+    </mouse>
+  </Global>
+</keymap>
