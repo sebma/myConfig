@@ -1,30 +1,40 @@
 <keymap>
 	<FullScreenVideo>
 		<mouse>
+			<rightclick>Pause</rightclick>
+			<middleclick>Mute</middleclick>
 			<wheeldown>VolumeDown</wheeldown>
 			<wheelup>VolumeUp</wheelup>
 		</mouse>
 	</FullScreenVideo>
 	<VideoMenu>
 		<mouse>
+			<rightclick>Pause</rightclick>
+			<middleclick>Mute</middleclick>
 			<wheeldown>VolumeDown</wheeldown>
 			<wheelup>VolumeUp</wheelup>
 		</mouse>
 	</VideoMenu>
 	<VideoOSD>
 		<mouse>
+			<rightclick>Pause</rightclick>
+			<middleclick>Mute</middleclick>
 			<wheeldown>VolumeDown</wheeldown>
 			<wheelup>VolumeUp</wheelup>
 		</mouse>
 	</VideoOSD>
- <Visualisation>
+	<Visualisation>
 		<mouse>
+			<rightclick>Pause</rightclick>
+			<middleclick>Mute</middleclick>
 			<wheeldown>VolumeDown</wheeldown>
 			<wheelup>VolumeUp</wheelup>
 		</mouse>
 	</Visualisation>
 	<MusicOSD>
 		<mouse>
+			<rightclick>Pause</rightclick>
+			<middleclick>Mute</middleclick>
 			<wheeldown>VolumeDown</wheeldown>
 			<wheelup>VolumeUp</wheelup>
 		</mouse>
