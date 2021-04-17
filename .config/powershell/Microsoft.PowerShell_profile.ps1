@@ -81,7 +81,7 @@ if( $IsWindows ) { $OSVersion = (osVersion) }
 $dirSep = [io.path]::DirectorySeparatorChar
 if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
-	set-alias np notepad.exe
+	set-alias np notepad
 	set-alias ytdl youtube-dl.exe
 	function speedtestDownloadSingle { time speedtest --single --bytes --no-upload }
 	function speedtestDownloadSimple { time speedtest --simple --bytes --no-upload }
