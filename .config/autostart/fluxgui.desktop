@@ -1,5 +1,6 @@
 [Desktop Entry]
 Exec=fluxgui
+Hidden=true
 Icon=fluxgui
 Name=f.lux indicator applet
 Type=Application
