@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=LIVE JP
-Exec=mpv --profile=sd,live https://www.youtube.com/c/JosephPrinceOnline/live
+Exec=mpv.sh --profile=sd,live https://www.youtube.com/c/JosephPrinceOnline/live
 Terminal=false
