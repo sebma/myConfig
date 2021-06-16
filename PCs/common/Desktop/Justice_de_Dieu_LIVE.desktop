@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=LIVE JdD
-Exec=mpv --profile=no-sub,fsd,live https://www.youtube.com/c/MinistereJusticedeDieu/live
+Exec=mpv.sh --profile=no-sub,fsd,live https://www.youtube.com/c/MinistereJusticedeDieu/live
 Terminal=false
