@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=LIVE NCC
-Exec=mpv --profile=fsd,live https://www.youtube.com/NewCreationChurch/live
+Exec=mpv.sh --profile=fsd,live https://www.youtube.com/NewCreationChurch/live
 Terminal=false
