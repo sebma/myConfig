@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=Vids JdD
-Exec=mpv --profile=french,sd https://www.youtube.com/c/MinistereJusticedeDieu/videos?sort=dd
+Exec=mpv --profile=no-sub,sd https://www.youtube.com/c/MinistereJusticedeDieu/videos?sort=dd
 Terminal=false
