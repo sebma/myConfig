@@ -132,7 +132,7 @@ ${color white}Occupation de /var/cache : ${color1}${fs_used /var/cache} / ${fs_s
 ${color white}Occupation de /opt : ${color1}${fs_used /opt} / ${fs_size /opt} - ${fs_used_perc /opt}% ${color white}${fs_bar /opt}
 ${color white}Occupation de /tmp : ${color1}${fs_used /tmp} / ${fs_size /tmp} - ${fs_used_perc /tmp}% ${color white}${fs_bar /tmp}
 ${color white}Occupation de /home : ${color1}${fs_used /home} / ${fs_size /home} - ${fs_used_perc /home}% ${color white}${fs_bar /home}
-${color white}Occupation de /datas : ${color1}${fs_used /datas} / ${fs_size /datas} - ${fs_used_perc /datas}% ${color white}${fs_bar /datas}
+${color white}Occupation de //multimedia : ${color1}${fs_used //multimedia} / ${fs_size //multimedia} - ${fs_used_perc //multimedia}% ${color white}${fs_bar //multimedia}
 #${color white}Processus :${color1} $processes ${color white} En cours :${color1} $running_processes
 ${color white}Utilisation du CPU
 ${offset 10}${color white}Nom ${alignr 50}PID ${alignr 20}%CPU
