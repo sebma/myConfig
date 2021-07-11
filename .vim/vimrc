@@ -28,10 +28,16 @@ function SortBashFunctionsByName()
 	:sort /^function /
 	:%s/<linefeed>/\r/g
 endfunction
-function ReIndent_XML_HTML()
+function ReIndent_HTML_with_xmllint()
+	:%!xmllint --html --format - 2>/dev/null
+endfunction
+function ReIndent_XML_with_xmllint()
+	:%!xmllint --xml --format - 2>/dev/null
+endfunction
+function ReIndent_XML_HTML_with_pup()
 	:%!pup
 endfunction
-function ReIndent_JSON()
+function ReIndent_JSON_with_jq()
 	:%!jq .
 endfunction
 
