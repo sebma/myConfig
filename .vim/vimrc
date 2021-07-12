@@ -43,10 +43,10 @@ endfunction
 
 "autocmd StdinReadPost * set buftype=nofile
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif "Remember last cursor position
-autocmd FileType xml let &equalprg=xmllint\ --xml\ --format\ --recover\ -\ 2>/dev/null "Pretty print XML when '=G' is pressed
-"autocmd FileType html let &equalprg='xmllint --html --format --recover - 2>/dev/null' "Pretty print HTML when '=G' is pressed
-autocmd FileType html let &equalprg='pup 2>/dev/null' "Pretty print HTML when '=G' is pressed
-autocmd FileType json let &equalprg='jq . 2>/dev/null' "Pretty print JSON when '=G' is pressed
+autocmd FileType xml let &l:equalprg=xmllint\ --xml\ --format\ --recover\ -\ 2>/dev/null "Pretty print XML when '=G' is pressed
+"autocmd FileType html let &l:equalprg='xmllint --html --format --recover - 2>/dev/null' "Pretty print HTML when '=G' is pressed
+autocmd FileType html let &l:equalprg='pup 2>/dev/null' "Pretty print HTML when '=G' is pressed
+autocmd FileType json let &l:equalprg='jq . 2>/dev/null' "Pretty print JSON when '=G' is pressed
 "autocmd FileType xml exe ':silent %!xmllint --xml --format --recover - 2>/dev/null' "Automatic indent when the file is opened
 "autocmd VimEnter * nested :call tagbar#autoopen(1) "open it only if you're opening Vim with a supported file/files
 
