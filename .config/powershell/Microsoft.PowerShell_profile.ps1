@@ -1,5 +1,11 @@
 # $HOME/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 #
+
+$tls12 = [Enum]::ToObject([System.Net.SecurityProtocolType], 3072)
+[System.Net.ServicePointManager]::SecurityProtocol = $tls12
+
+Update-Help
+
 function osFamily {
 	if( !(Test-Path variable:IsWindows) ) {
 		# $IsWindows is not defined, let's define it
