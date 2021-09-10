@@ -116,6 +116,7 @@ if( $IsWindows ) {
 }
 
 $PowerShellUserConfigDIR = Split-Path $PROFILE
+New-Item -Path "$PowerShellUserConfigDIR/seb_${osFamily}_aliases.ps1" -ItemType file
 Import-Alias "$PowerShellUserConfigDIR/seb_${osFamily}_aliases.ps1"
 
 $hostname = hostname
