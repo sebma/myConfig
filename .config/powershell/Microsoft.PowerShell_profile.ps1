@@ -58,7 +58,7 @@ function osVersion {
 				9600 {$OSRelease = "W2K12R2"; Break}
 				14393 {$OSRelease = "W2K16v1607"; Break}
 				16229 {$OSRelease = "W2K16v1709"; Break}
-				default { $OSRelease = "Not Listed"; Break}
+				default { $OSRelease = "Not Known"; Break}
 			}
 		}
 		else {
@@ -70,7 +70,7 @@ function osVersion {
 				9200 {$OSRelease = "8"; Break}
 				9600 {$OSRelease = "8.1"; Break}
 				19042 {$OSRelease = "10"; Break}
-				default { $OSRelease = "Not Listed"; Break}
+				default { $OSRelease = "Not Known"; Break}
 			}
 		}
 	}
@@ -87,16 +87,16 @@ if( $IsWindows ) { $OSVersion = (osVersion) }
 $dirSep = [io.path]::DirectorySeparatorChar
 if( $IsWindows ) {
 	Set-Alias vi "$env:ProgramFiles/Git/usr/bin/vim.exe"
-	set-alias np notepad
-	set-alias np1 notepad1
-	set-alias np2 notepad2
-	set-alias np3 notepad3
-	set-alias ytdl youtube-dl.exe
-	function speedtestDownloadSingle { time speedtest --single --bytes --no-upload }
-	function speedtestDownloadSimple { time speedtest --simple --bytes --no-upload }
-	function speedtestSimple { time speedtest --simple --bytes }
-	function speedtestSingle { time speedtest --single --bytes }
-	if( ! (alias | select-string wget) ) { set-alias wget Invoke-WebRequest }
+	Set-Alias np notepad
+	Set-Alias np1 notepad1
+	Set-Alias np2 notepad2
+	Set-Alias np3 notepad3
+	Set-Alias yt-dl youtube-dl.exe
+	function speedtestDownloadSingle { time speedtest --single --no-upload }
+	function speedtestDownloadSimple { time speedtest --simple --no-upload }
+	function speedtestSimple { time speedtest --simple }
+	function speedtestSingle { time speedtest --single }
+	if( ! (alias | select-string wget) ) { Set-Alias wget Invoke-WebRequest }
 
 	Set-Alias  ex
 	function ex{exit}
