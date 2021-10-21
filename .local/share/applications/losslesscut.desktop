@@ -1,0 +1,6 @@
+#!/usr/bin/exo-open
+[Desktop Entry]
+Type=Application
+Name=LosslessCut
+Exec=losslesscut %U
+Terminal=false
