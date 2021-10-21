@@ -1,0 +1,28 @@
+[Desktop Action new-window]
+Exec=gnome-terminal --window
+Name=New Window
+
+[Desktop Action preferences]
+Exec=gnome-terminal --preferences
+Name=Preferences
+
+[Desktop Entry]
+Actions=new-window;preferences;
+Categories=GNOME;GTK;System;TerminalEmulator;
+Comment=Use the command line
+Exec=gnome-terminal
+Icon=org.gnome.Terminal
+Keywords=shell;prompt;command;commandline;cmd;
+Name=GNOME Terminal
+NoDisplay=false
+OnlyShowIn=GNOME;Unity;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+TryExec=gnome-terminal
+Type=Application
+X-GNOME-SingleWindow=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-Ubuntu-Gettext-Domain=gnome-terminal
