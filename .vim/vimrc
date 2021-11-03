@@ -34,7 +34,10 @@ endfunction
 function ReIndent_XML_with_xmllint()
 	:%!xmllint --xml --format - 2>/dev/null
 endfunction
-function ReIndent_XML_HTML_with_pup()
+function ReIndent_XML_with_xmlstarlet()
+	:%!xmlstarlet format - 2>/dev/null
+endfunction
+function ReIndent_HTML_with_pup()
 	:%!pup
 endfunction
 function ReIndent_JSON_with_jq()
