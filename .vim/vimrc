@@ -19,6 +19,8 @@ nmap <F8> :TagbarToggle<CR>
 "nnoremap / /\v # enable Extended Regular Expression search
 "vnoremap / /\v
 
+command -nargs=0 -range SortLine <line1>,<line2>call setline('.',join(sort(split(getline('.'),' ')),' '))
+
 function SortMyAliases()
 	:1
 	:/^alias /,$-3sort u
