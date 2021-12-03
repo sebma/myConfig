@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/forkotov02/ppa/ubuntu focal main
+deb http://ppa.launchpad.net/forkotov02/ppa/ubuntu focal main # For qmmp and yt-dlp
 # deb-src http://ppa.launchpad.net/forkotov02/ppa/ubuntu focal main
