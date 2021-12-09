@@ -21,7 +21,6 @@ nmap <F8> :TagbarToggle<CR>
 
 command -nargs=0 -range SortLine <line1>,<line2>call setline('.',join(sort(split(getline('.'),' ')),' '))
 command -nargs=0 -range=% ReIndentXML call ReIndent_XML_with_xmlstarlet()
-"command -nargs=0 -range=/function/,/^}/ CopyBashFunction yank " does not work
 nnoremap yaf ?function<CR>$V%y<CR>
 
 function SortMyAliases()
