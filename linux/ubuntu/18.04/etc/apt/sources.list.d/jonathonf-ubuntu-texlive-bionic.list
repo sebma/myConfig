@@ -1,0 +1,2 @@
+# deb http://ppa.launchpad.net/jonathonf/texlive/ubuntu focal main # disabled on upgrade to focal
+# deb-src http://ppa.launchpad.net/jonathonf/texlive/ubuntu bionic main
