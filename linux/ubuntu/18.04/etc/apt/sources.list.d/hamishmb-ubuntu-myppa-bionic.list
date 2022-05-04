@@ -1,0 +1,2 @@
+# deb http://ppa.launchpad.net/hamishmb/myppa/ubuntu focal main # disabled on upgrade to focal # ddrescue-gui & python3-getdevinfo
+# deb-src http://ppa.launchpad.net/hamishmb/myppa/ubuntu bionic main
