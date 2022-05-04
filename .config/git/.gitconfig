@@ -31,3 +31,11 @@
 	rebase = false
 [core]
 	hooksPath = myScripts/global/.githooks
+[diff "doc"]
+	textconv = catdoc
+[diff "xls"]
+	textconv = xls2csv
+[diff "ppt"]
+	textconv = catppt
+[diff "odt"]
+	textconv = odt2txt
