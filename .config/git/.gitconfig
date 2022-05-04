@@ -33,9 +33,21 @@
 	hooksPath = myScripts/global/.githooks
 [diff "doc"]
 	textconv = catdoc
+	binary = true
+	cachetextconv = true
 [diff "xls"]
 	textconv = xls2csv
+	binary = true
+	cachetextconv = true
 [diff "ppt"]
 	textconv = catppt
+	binary = true
+	cachetextconv = true
 [diff "odt"]
 	textconv = odt2txt
+	binary = true
+	cachetextconv = true
+[diff "zip"]
+	textconv = unzip -c -a
+	binary = true
+	cachetextconv = true
