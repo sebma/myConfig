@@ -1,14 +1,13 @@
 [Desktop Entry]
-Categories=Network;Application;
-Encoding=UTF-8
-Exec=teams %U
-Hidden=true
-Icon=teams
-MimeType=x-scheme-handler/msteams;
-Name=Microsoft Teams - Preview
-StartupNotify=false
-Terminal=false
-Type=Application
 Version=1.0
+Type=Application
+Encoding=UTF-8
+Name=Microsoft Teams - Preview
+Exec=/usr/bin/teams %U
+Icon=teams
+Terminal=false
+StartupNotify=false
+Categories=Network;Application;
+MimeType=x-scheme-handler/msteams;
 X-GNOME-Autostart-enabled=true
 X-KDE-Protocols=teams
