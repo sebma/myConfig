@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/mc3man/mpv-tests/ubuntu focal main
+deb http://ppa.launchpad.net/mc3man/mpv-tests/ubuntu focal main # mpv
 # deb-src http://ppa.launchpad.net/mc3man/mpv-tests/ubuntu focal main
