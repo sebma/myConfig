@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Name=Vids JdD
+Name=Vids JdD from Newer
 Exec=mpv.sh --profile=no-sub,sd https://www.youtube.com/c/MinistereJusticedeDieu/videos?sort=dd
 Terminal=false
