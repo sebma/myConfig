@@ -1,3 +1,4 @@
+# vim: set ft=lua noet:
 conky.config = {
 -- conky configuration
 -- edited by Clapico : http://www.clapico.com
