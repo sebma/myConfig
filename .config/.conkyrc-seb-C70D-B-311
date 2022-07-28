@@ -1,5 +1,8 @@
+# vim: set ft=lua noet:
 conky.config = {
 -- conky configuration
+--	out_to_x = false,
+--	out_to_ncurses = true,
 -- edited by Clapico : http://www.clapico.com
 -- set to yes if you want Conky to be forked in the background
 	background = true,
@@ -106,7 +109,7 @@ conky.text = [[
 #${color white}Bienvenue sur $nodename
 #${color white}${exec lsb_release -si} $sysname $kernel : ${exec lsb_release -sr} (${exec lsb_release -sc})
 ${color white}${exec lsb_release -sirc | tr "\n" " "}on ${color green}${time %A %d-%m-%Y}${color white} at ${color red}${time %T}
-${color white}Wifi AP: ${color red}${wireless_bitrate wlan0} ${color white}Temperature ACPI: ${color1}${acpitemp}degres ${color white}Temperature sda: ${color blue}${hddtemp}degres
+${color white}Wifi AP: ${color red}${wireless_bitrate wlan0} ${color white}Temperature ACPI: ${color1}${acpitemp}degres ${color white}Temperature sda: N/A
 #${color white}Date: ${color1}${time %A %d %B %Y}${color white} a ${color red}${time %H:%M:%S}
 #${color white}IP Ethernet: ${color1}${addr eth0}${color white}
 #${color white}ESSID: ${color1}${wireless_essid wlan0}${color white} Signal WiFi: ${color1}${wireless_bitrate wlan0}
