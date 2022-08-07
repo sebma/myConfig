@@ -40,6 +40,7 @@ function osFamily {
 		return $osFamily
 	}
 }
+if( !(Test-Path variable:IsWindows) ) { $IsWindows, $IsLinux, $IsMacOS, $osFamily = osFamily } else { $osFamily = osFamily }
 
 function osVersion {
 	if( $osFamily -eq "Windows" ) {
@@ -79,10 +80,7 @@ function osVersion {
 	}
 	return $OSRelease
 }
-
-if( !(Test-Path variable:IsWindows) ) { $IsWindows, $IsLinux, $IsMacOS, $osFamily = osFamily } else { $osFamily = osFamily }
-
-if( $IsWindows ) { $OSVersion = (osVersion) }
+$OSVersion = (osVersion)
 
 $dirSep = [io.path]::DirectorySeparatorChar
 if( $IsWindows ) {
@@ -133,7 +131,7 @@ function Prompt {
 	Write-Host "$username : " -NoNewline
 	Write-Host "$hostname " -NoNewline -ForegroundColor Yellow
 	Write-Host "@ $domain / " -NoNewline -ForegroundColor Red
-	Write-Host "$osFamily $OSRelease" -NoNewline -ForegroundColor Green
+	Write-Host "$osFamily $OSVersion " -NoNewline -ForegroundColor Green
 	Write-Host "PSv$PSHVersion " -NoNewline -ForegroundColor Blue
 	Write-Host "$mywd>" -ForegroundColor Green
 	return " "
