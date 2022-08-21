@@ -1,3 +1,4 @@
 #!sudoedit
 Defaults        env_reset,pwfeedback
+Defaults	env_keep += "EDITOR"
 %sudo   ALL=(ALL) ALL
