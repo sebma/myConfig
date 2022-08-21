@@ -1,0 +1,2 @@
+# vim: ft=aptconf noet
+#Acquire::https::Proxy “http://127.0.0.1:3128/”;
