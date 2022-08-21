@@ -1,4 +1,4 @@
 # vim: ft=sudoers noet
 Defaults	env_reset,pwfeedback
-Defaults	env_keep += "EDITOR"
+Defaults	env_keep += "EDITOR https_proxy"
 %sudo	ALL=(ALL) ALL
