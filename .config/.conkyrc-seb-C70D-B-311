@@ -1,7 +1,7 @@
 # vim: set ft=lua noet:
 conky.config = {
 -- conky configuration
---	out_to_x = false,
+	out_to_x = no,
 --	out_to_ncurses = true,
 -- edited by Clapico : http://www.clapico.com
 -- set to yes if you want Conky to be forked in the background
@@ -53,6 +53,7 @@ conky.config = {
 -- own window options
 	own_window = true,
 	own_window_type = 'normal',
+	own_window_hints = 'undecorated,below,skip_taskbar,sticky',
 	own_window_argb_visual = true,
 	own_window_transparent = true,
 --own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
