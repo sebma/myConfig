@@ -1,0 +1,4 @@
+[Kodi]
+title=Kodi Media Center
+description=Kodi, formerly known as XBMC Media Center, is a software media-player and entertainment hub for all your digital media.
+ports=8080,9090,9777/tcp
