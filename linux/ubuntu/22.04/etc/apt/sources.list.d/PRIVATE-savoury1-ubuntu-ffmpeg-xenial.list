@@ -1,3 +1,0 @@
-# This is a Private PPA repository, you need to add the credentials given by the owner from "https://launchpad.net/~/+archivesubscriptions/3419874" into a file in the "/etc/apt/auth.conf.d/" directory with the same syntax as the ".netrc" file
-deb https://private-ppa.launchpadcontent.net/savoury1/ffmpeg/ubuntu jammy main
-# deb-src https://private-ppa.launchpadcontent.net/savoury1/ffmpeg/ubuntu jammy main
