@@ -1,6 +1,6 @@
 [Unit]
 Description=Trigger the service record.service
 [Timer]
-OnCalendar=Sun *-*-* 11:29:30
+OnCalendar=Sun *-*-* 08:29:30
 [Install]
 WantedBy=timers.target
