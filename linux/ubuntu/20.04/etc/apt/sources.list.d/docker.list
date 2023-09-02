@@ -1,2 +1,2 @@
-deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable # docker
+deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable # docker-ce-cli
 # deb-src [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
