@@ -1,1 +1,1 @@
-deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ jammy main
+deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ jammy main # waydroid
