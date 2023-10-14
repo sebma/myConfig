@@ -1,1 +1,1 @@
-deb [arch=amd64] http://apt.fruit.je/ubuntu jammy mpv # mpv
+deb [arch=amd64] http://apt.fruit.je/ubuntu focal mpv # mpv
