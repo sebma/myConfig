@@ -7,4 +7,4 @@ Type=oneshot
 User=sebastien
 Group=sebastien
 #UMask=026
-ExecStart=/home/sebastien/myScripts/shl/record_NCC_Live_Then_Suspend.sh
+ExecStart=%h/myScripts/shl/record_NCC_Live_Then_Suspend.sh
