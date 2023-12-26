@@ -1,2 +1,2 @@
-deb https://ppa.launchpadcontent.net/team-xbmc/ppa/ubuntu/ jammy main
+deb https://ppa.launchpadcontent.net/team-xbmc/ppa/ubuntu/ jammy main # Kodi
 # deb-src https://ppa.launchpadcontent.net/team-xbmc/ppa/ubuntu/ jammy main
