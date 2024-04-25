@@ -11,4 +11,4 @@ Categories=Network;Application;
 MimeType=x-scheme-handler/msteams;
 X-GNOME-Autostart-enabled=true
 X-KDE-Protocols=teams
-Hidden=false
+Hidden=true
