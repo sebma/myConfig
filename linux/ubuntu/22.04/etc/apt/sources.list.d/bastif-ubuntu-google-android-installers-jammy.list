@@ -1,2 +1,2 @@
-deb https://ppa.launchpadcontent.net/bastif/google-android-installers/ubuntu/ jammy main
+deb https://ppa.launchpadcontent.net/bastif/google-android-installers/ubuntu/ jammy main # google-android-cmdline-tools-12.0-installer google-android-emulator-installer google-android-platform-tools-installer google-android-cmdline-tools-installer
 # deb-src https://ppa.launchpadcontent.net/bastif/google-android-installers/ubuntu/ jammy main
