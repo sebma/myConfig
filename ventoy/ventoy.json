@@ -1,7 +1,7 @@
 {
 	"control": [
 		{ "VTOY_DEFAULT_IMAGE": "/ISO/debian_netinstall.iso" },
-		{ "VTOY_DEFAULT_KBD_LAYOUT	  ": "FRENCH" },
+		{ "VTOY_DEFAULT_KBD_LAYOUT": "FRENCH" },
 		{ "VTOY_DEFAULT_MENU_MODE": "1" },
 		{ "VTOY_DEFAULT_SEARCH_ROOT": "/ISO" },
 		{ "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
