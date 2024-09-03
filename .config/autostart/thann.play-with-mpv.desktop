@@ -5,3 +5,4 @@ Exec=play-with-mpv
 Icon=mpv
 Name=Play With MPV (server)
 Type=Application
+Hidden=true
