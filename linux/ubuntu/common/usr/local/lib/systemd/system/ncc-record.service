@@ -1,6 +1,6 @@
 [Unit]
 Description=Record the New Creation Church Live sermon
-After=network-online.target
+After=autofs.service
 
 [Service]
 Type=oneshot
