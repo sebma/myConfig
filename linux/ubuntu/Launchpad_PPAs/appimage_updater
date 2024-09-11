@@ -1,0 +1,2 @@
+sudo add-apt-repository ppa:appimage/updater # appimageupdater
+sudo apt install -V appimageupdater
