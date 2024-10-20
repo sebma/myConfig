@@ -3,7 +3,7 @@ Description=Trigger the service record.service
 After=autofs.service
 
 [Timer]
-OnCalendar=Sun 09:29:30 UTC
+OnCalendar=Sun 09:29:35 UTC
 
 [Install]
 WantedBy=timers.target
