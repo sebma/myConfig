@@ -1,2 +1,0 @@
-sudo add-apt-repository ppa:alex-p/librecad
-sudo apt install -V librecad

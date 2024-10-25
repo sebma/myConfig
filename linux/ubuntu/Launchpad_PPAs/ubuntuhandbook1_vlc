@@ -1,2 +1,0 @@
-sudo add-apt-repository ppa:ubuntuhandbook1/vlc
-sudo apt install -V vlc

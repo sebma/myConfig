@@ -1,2 +1,0 @@
-sudo add-apt-repository ppa:ubuntuhandbook1/mpv
-sudo apt install -V mpv
