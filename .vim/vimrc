@@ -12,8 +12,11 @@ syntax on
 " Shortcut to rapidly toggle `set list` with CTRL+L
 nmap <c-l> :set list!<CR>
 nmap <c-t> :sort u<CR>
+" Show line numbers
 nmap <c-n> :set nu! \| :set ruler<CR>
+" Reload current file
 nmap <F5> :e<CR>
+" Switch between vim split windows
 map <F6> <C-W>w
 nmap <F8> :TagbarToggle<CR>
 "nnoremap / /\v # enable Extended Regular Expression search
