@@ -1,2 +1,3 @@
 sudo add-apt-repository ppa:appimagelauncher-team/stable
+apt-cache policy appimagelauncher | grep appimagelauncher-team/stable -q || sudo apt update
 sudo apt install -V appimagelauncher
