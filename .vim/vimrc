@@ -65,6 +65,7 @@ autocmd FileType json let &l:equalprg='jq . 2>/dev/null' "Pretty print JSON when
 autocmd BufNewFile,BufRead *.ovpn set filetype=openvpn
 autocmd BufNewFile,BufRead *.octave set filetype=matlab
 autocmd BufNewFile,BufRead *.tikz set filetype=tex
+autocmd BufNewFile,BufRead *.dockerfile,Dockerfile* set filetype=dockerfile
 
 "let g:tagbar_ctags_bin = "$HOME/gnu/bin/ctags"
 
