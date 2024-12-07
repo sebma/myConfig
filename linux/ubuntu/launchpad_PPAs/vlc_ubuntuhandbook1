@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-installPackageFromRepo.sh ppa:ubuntuhandbook1/vlc vlc
+installPackagesFromRepo.sh ppa:ubuntuhandbook1/vlc vlc
