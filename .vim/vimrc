@@ -8,6 +8,7 @@ set title
 set nohls autoindent
 set noexpandtab tabstop=4 shiftwidth=4
 syntax on
+" set mouse=v " For Alpine Linux
 
 " Shortcut to rapidly toggle `set list` with CTRL+L
 nmap <c-l> :set list!<CR>
