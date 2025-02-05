@@ -58,6 +58,7 @@ autocmd FileType xml let &l:equalprg='xmllint --xml --format --recover - 2>/dev/
 "autocmd FileType html let &l:equalprg='xmllint --html --format --recover - 2>/dev/null' "Pretty print HTML when '=G' is pressed
 autocmd FileType yaml setlocal expandtab
 "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+"autocmd FileType toml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType html let &l:equalprg='pup 2>/dev/null' "Pretty print HTML when '=G' is pressed
 autocmd FileType json let &l:equalprg='jq . 2>/dev/null' "Pretty print JSON when '=G' is pressed
 "autocmd FileType xml exe ':silent %!xmllint --xml --format --recover - 2>/dev/null' "Automatic indent when the file is opened
