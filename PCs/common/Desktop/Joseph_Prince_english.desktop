@@ -2,7 +2,7 @@
 Exec=freetube --new-window "http://www.tonvid.com/search.php?q=joseph+prince+english&videoDefinition=any&date_filter=any&videoDuration=long&safeSearch=none&videotype=any&order=date"
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
-Icon=smtube
+Icon=freetube
 Name=Joseph Prince english
 Type=Application
 Categories=Qt;KDE;AudioVideo;Player;Video;
