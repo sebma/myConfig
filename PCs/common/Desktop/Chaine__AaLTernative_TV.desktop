@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=smtube -url "http://www.tonvid.com/search.php?channelId=UClEwtThNimLEnrQhRg__YwQ&channelTitle=AaLTernative+TV"
+Exec=freetube --new-window "http://www.tonvid.com/search.php?channelId=UClEwtThNimLEnrQhRg__YwQ&channelTitle=AaLTernative+TV"
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=smtube

@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=smtube -url "http://www.tonvid.com/search.php?q=joel+osteen&order=relevance&videoDefinition=any&date_filter=any&safeSearch=none&videotype=any&videoDuration=long"
+Exec=freetube --new-window "http://www.tonvid.com/search.php?q=joel+osteen&order=relevance&videoDefinition=any&date_filter=any&safeSearch=none&videotype=any&videoDuration=long"
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=smtube

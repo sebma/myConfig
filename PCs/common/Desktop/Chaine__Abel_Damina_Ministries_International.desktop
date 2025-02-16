@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=smtube -url "http://www.tonvid.com/search.php?channelId=UCkQ9ZK48EZ9xkXNZVses4Sw&channelTitle=Abel+Damina+Ministries+International"
+Exec=freetube --new-window "http://www.tonvid.com/search.php?channelId=UCkQ9ZK48EZ9xkXNZVses4Sw&channelTitle=Abel+Damina+Ministries+International"
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=smtube

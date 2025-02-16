@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=smtube -url "http://www.tonvid.com/search.php?channelId=UCRO1GwyO5cRJvqxzXN4zX_g&channelTitle=Ministere+Justice+de+Dieu"
+Exec=freetube --new-window "http://www.tonvid.com/search.php?channelId=UCRO1GwyO5cRJvqxzXN4zX_g&channelTitle=Ministere+Justice+de+Dieu"
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=smtube
