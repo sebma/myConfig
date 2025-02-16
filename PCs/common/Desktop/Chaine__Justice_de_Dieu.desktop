@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=freetube --new-window "http://www.tonvid.com/search.php?channelId=UCRO1GwyO5cRJvqxzXN4zX_g
+Exec=freetube --new-window "https://www.youtube.com/channel/UCRO1GwyO5cRJvqxzXN4zX_g
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=freetube
