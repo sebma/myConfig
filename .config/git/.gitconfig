@@ -1,0 +1,55 @@
+[user]
+	name = sebma
+	email = sebma@users.noreply.github.com
+[color]
+	ui = true
+[alias]
+	addv = add -v
+	br = branch
+	co = checkout
+	com = commit -uno
+	ct = describe --tags --abbrev=0 # current tag
+	diffw = diff --word-diff=plain --color
+	edit-global-config = config --global --edit
+	edit-local-config = config --local --edit
+	showw = show --word-diff=plain --color
+	mv-into-dir = "!mvIntoDIR() { cd ${GIT_PREFIX:-.};git mv -v $1 $2/;git commit -uno $1 $2 -m \"Moved $1 into $2/\"; }; mvIntoDIR"
+	mvv = "!mvVerbose() { cd ${GIT_PREFIX:-.};git mv -v \"$1\" \"$2\";git commit -uno \"$1\" \"$2\" -m \"Renamed $1 to $2\"; }; mvVerbose"
+	st = status -bs
+	stu = status -bs -uno
+#[pager]
+#	diff = git diff --word-diff=plain --color -- "$@" | less # Shows the diff for all the changed files instead of that of "$@"
+#	show = git show --word-diff=plain --color -- "$@" | less
+[credential]
+	helper = cache --timeout=86400
+[push]
+	default = current
+[filter "lfs"]
+	required = true
+	clean =  git-lfs clean  -- %f
+	process = git-lfs filter-process
+	smudge = git-lfs smudge -- %f
+[pull]
+	rebase = false
+[core]
+	hooksPath = myScripts/global/.githooks
+[diff "doc"]
+	textconv = catdoc
+	binary = true
+	cachetextconv = true
+[diff "xls"]
+	textconv = xls2csv
+	binary = true
+	cachetextconv = true
+[diff "ppt"]
+	textconv = catppt
+	binary = true
+	cachetextconv = true
+[diff "odt"]
+	textconv = odt2txt
+	binary = true
+	cachetextconv = true
+[diff "zip"]
+	textconv = unzip -c -a
+	binary = true
+	cachetextconv = true
