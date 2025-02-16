@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=Worship by NCC
-Exec=mpv.sh --profile=fsd https://www.youtube.com/playlist?list=PLRv5TPGK6KtzQbPWB0Etd_5nrX6aNHzQF
+Exec=mpv.sh --profile=sd https://www.youtube.com/playlist?list=PLRv5TPGK6KtzQbPWB0Etd_5nrX6aNHzQF
 Terminal=false
