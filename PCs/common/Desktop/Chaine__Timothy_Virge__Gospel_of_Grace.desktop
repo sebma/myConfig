@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=freetube --new-window "http://www.tonvid.com/search.php?channelId=UCIXJjg_Ws_KucPYq5U-5GOA&channelTitle=Gospel+of+Grace+podcast+Timothy+and+Lisa"
+Exec=freetube --new-window "http://www.tonvid.com/search.php?channelId=UCIXJjg_Ws_KucPYq5U-5GOA
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=freetube

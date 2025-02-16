@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=freetube --new-window "http://www.tonvid.com/search.php?channelId=UCNb2H0PwlajFSmfjgfDdKvA&channelTitle=J%C3%A9sus+le+CHRIST+T%27aime+Eternellement"
+Exec=freetube --new-window "http://www.tonvid.com/search.php?channelId=UCNb2H0PwlajFSmfjgfDdKvA
 Comment=Browse and search videos from YouTube
 GenericName=YouTube Browser for SMPlayer
 Icon=freetube
