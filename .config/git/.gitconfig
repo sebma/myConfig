@@ -17,6 +17,7 @@
 	mvv = "!mvVerbose() { cd ${GIT_PREFIX:-.};git mv -v \"$1\" \"$2\";git commit -uno \"$1\" \"$2\" -m \"Renamed $1 to $2\"; }; mvVerbose"
 	st = status -bs
 	stu = status -bs -uno
+	ls = ls-files
 #[pager]
 #	diff = git diff --word-diff=plain --color -- "$@" | less # Shows the diff for all the changed files instead of that of "$@"
 #	show = git show --word-diff=plain --color -- "$@" | less
