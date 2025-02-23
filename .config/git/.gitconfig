@@ -19,6 +19,8 @@
 	stu = status -bs -uno
 	ls = ls-files
 	local-undelete = "!gitLocalUndelete() { git ls-files -d | grep . && git ls-files -d | xargs git checkout-index; }; gitLocalUndelete"
+	current-tag = describe --tags --abbrev=0
+	url = config remote.origin.url
 #[pager]
 #	diff = git diff --word-diff=plain --color -- "$@" | less # Shows the diff for all the changed files instead of that of "$@"
 #	show = git show --word-diff=plain --color -- "$@" | less
