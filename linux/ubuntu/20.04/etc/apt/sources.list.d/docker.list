@@ -1,2 +1,2 @@
-deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable # docker-ce docker-compose-plugin
+deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable # docker-ce docker-compose-plugin docker-buildx-plugin
 # deb-src [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
