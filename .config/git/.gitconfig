@@ -21,6 +21,11 @@
 	local-undelete = "!gitLocalUndelete() { git ls-files -d | grep . && git ls-files -d | xargs git checkout-index; }; gitLocalUndelete"
 	current-tag = describe --tags --abbrev=0
 	url = config remote.origin.url
+[safe]
+	directory = C:/ProgramData/scoop/buckets/main
+	directory = C:/ProgramData/scoop/buckets/versions
+	directory = C:/ProgramData/scoop/buckets/extras
+	directory = C:/ProgramData/scoop/buckets/nirsoft
 #[pager]
 #	diff = git diff --word-diff=plain --color -- "$@" | less # Shows the diff for all the changed files instead of that of "$@"
 #	show = git show --word-diff=plain --color -- "$@" | less
