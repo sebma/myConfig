@@ -26,6 +26,7 @@
 	directory = C:/ProgramData/scoop/buckets/versions
 	directory = C:/ProgramData/scoop/buckets/extras
 	directory = C:/ProgramData/scoop/buckets/nirsoft
+	directory = C:/ProgramData/scoop/apps/scoop/current
 #[pager]
 #	diff = git diff --word-diff=plain --color -- "$@" | less # Shows the diff for all the changed files instead of that of "$@"
 #	show = git show --word-diff=plain --color -- "$@" | less
