@@ -8,6 +8,7 @@ set title
 set nohls autoindent
 set noexpandtab tabstop=4 shiftwidth=4
 syntax on
+" set nocompatible # See https://askubuntu.com/a/353944/426176
 " set mouse=v " For Alpine Linux
 
 " Shortcut to rapidly toggle `set list` with CTRL+L
