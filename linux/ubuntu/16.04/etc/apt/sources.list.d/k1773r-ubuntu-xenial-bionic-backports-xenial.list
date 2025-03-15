@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/k1773r/xenial-bionic-backports/ubuntu xenial main
+deb http://ppa.launchpad.net/k1773r/xenial-bionic-backports/ubuntu xenial main # xfce4-weather-plugin
 # deb-src http://ppa.launchpad.net/k1773r/xenial-bionic-backports/ubuntu xenial main
