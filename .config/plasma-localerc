@@ -1,0 +1,11 @@
+[Formats]
+LANG=fr_FR.UTF-8
+LC_COLLATE=C
+LC_MEASUREMENT=C
+LC_MONETARY=fr_FR.UTF-8
+LC_NUMERIC=C
+LC_TIME=C
+useDetailed=true
+
+[Translations]
+LANGUAGE=en_US
