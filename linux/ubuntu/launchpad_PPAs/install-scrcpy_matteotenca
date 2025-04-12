@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+dpkg -l scrcpy-server && sudo apt purge -V scrcpy-server scrcpy -y
 installPackagesFromRepo.sh ppa:matteotenca/scrcpy scrcpy
