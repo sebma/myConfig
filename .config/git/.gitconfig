@@ -3,6 +3,7 @@
 	email = sebma@users.noreply.github.com
 [color]
 	ui = true
+	status = always
 [alias]
 	addv = add -v
 	br = branch
