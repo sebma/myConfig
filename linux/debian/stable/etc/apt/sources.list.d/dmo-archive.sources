@@ -1,6 +1,6 @@
 Types: deb
 URIs: https://archive.deb-multimedia.org
-Suites: testing
+Suites: stable
 Components: main non-free
 Signed-By: /usr/share/keyrings/deb-multimedia-keyring.pgp
 Enabled: yes
