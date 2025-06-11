@@ -31,10 +31,13 @@ VERSION=2.00
 # delimiters. Use negative values to indicate South and West, or
 # use the abbreviated compass directions N, S, E, W.
 #LATITUDE=
+LATITUDE=48.7904N
 #LONGITUDE=
+LONGITUDE=2.6545E
 # TIMEZONE may may be in decimal format or in the form degrees[:minutes]
 # with the characters :'" as possible delimiters.
 #TIMEZONE=
+TIMEZONE=+2
 
 # Output in hebrew characters
 # hdate defaults to output all information in your default language, so
@@ -70,6 +73,7 @@ VERSION=2.00
 #LESEDER=FALSE
 
 #SUN_RISE_SET=FALSE
+SUN_RISE_SET=TRUE
 #TIMES_OF_DAY=FALSE
 #SHORT_FORMAT=FALSE
 #SEFIRAT_HAOMER=FALSE
