@@ -111,6 +111,7 @@ SUN_RISE_SET=TRUE
 # Suppress alerts and warnings
 # hdate alerts the user via STDERR when it guesses the user's location.
 #QUIET_ALERTS=FALSE
+QUIET_ALERTS=TRUE
 
 # Julian day number
 # The Julian day number is a .... See ... for more details.
