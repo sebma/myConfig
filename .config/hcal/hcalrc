@@ -110,6 +110,7 @@ TIMEZONE=+2
 # Suppress alerts and warnings
 # hcal alerts the user via STDERR when it guesses the user's location.
 #QUIET_ALERTS=FALSE
+QUIET_ALERTS=TRUE
 
 # Three month display
 # hcal can display a previous, current and next month side-by-side. hcal
