@@ -1,0 +1,135 @@
+# configuration file for hcal - Hebrew calendar program
+# part of package libhdate
+#
+# Should you mangle this file and wish to restore its default content,
+# rename or delete this file and run hcal; hcal will automatically
+# regenerate the default content.
+#
+# Your system administrator can set system-wide defaults for hcal by
+# modifying file <not yet implemented>.
+# You may override all defaults by changing the contents of this file.
+#
+# Version information
+# This may be used by updates to hcal to determine how to parse the file
+# and whether additional information and options should be appended to
+# the end of this file.
+VERSION=2.00
+# Location awareness
+# hcal wants to accurately highlight the current Hebrew day, including
+# during the hours between sunset and secular midnight. If you don't
+# provide it with latitude, longitude, and time zone information, hcal
+# will try to guess the information, based upon your system timezone,
+# and its (limited, and maybe biased) of the dominant Jewish community
+# in that timezone. When hcal is forced to guess, it alerts the user
+# with a message that includes the guessed location.
+# hcal's guesses will also affect its default behaviour for output of
+# Shabbat times, parshiot, and choice of Israel/diaspora hoidays
+#SUNSET_AWARE=TRUE
+# LATITUDE and LONGITUDE may be in decimal format or in the form
+# degrees[:minutes[:seconds]] with the characters :'" as possible
+# delimiters. Use negative values to indicate South and West, or
+# use the abbreviated compass directions N, S, E, W.
+#LATITUDE=
+LATITUDE=48.7904
+#LONGITUDE=
+LONGITUDE=2.6545
+# TIMEZONE may may be in decimal format or in the form degrees[:minutes]
+# with the characters :'" as possible delimiters.
+#TIMEZONE=
+TIMEZONE=+2
+
+# Israel and the diaspora
+# If hcal guesses that you're not in Israel, the DIASPORA option will be
+# set true. This will affect holiday and parasha output.  FORCE_ISRAEL
+# forces hcal to display calendar information for Israel, using hcal's
+# default coordinates foe Israel, or coordinates that you provide that
+# seem legitmately within Israel.
+# Thus, if you are living in Sao Paolo, and will be visiting Israel for
+# Sukkot, set BOTH flags true in order to see holiday information for
+# a non-resident vistor to Israel. The command line options for these
+# features are --israel, -I, --diaspora, -d.
+#FORCE_DIASPORA=FALSE;
+#FORCE_ISRAEL=FALSE;
+
+# Shabbat related
+# Setting SHABBAT_INFO true will output parshiot and Shabbat times.
+# The command line options for these features are -p (--parasha), and
+# -s (--shabbat). The CANDLE_LIGHTING field can accept a value of 18 - 90 (minutes
+# before sunset). The HAVDALAH field can accept a value of 20 - 90
+# (minutes after sunset).
+#PARASHA_NAMES=FALSE
+#SHABBAT_INFO=FALSE
+#CANDLE_LIGHTING=FALSE
+#HAVDALAH=FALSE
+
+# Holiday identification
+# hcal flags holidays by replacing the gregorian/Hebrew date separator
+# with assorted unhelpful cryptic symbols. Setting FOOTNOTES to true
+# will have hcal output after the month's calendar, a list of the month's
+# holidays along with the days on which they occur.
+#FOOTNOTE=FALSE
+
+# Output in hebrew characters
+# hcal defaults to output all information in your default language, so
+# if your default language is Hebrew, you're all set. Otherwise, you can
+# set FORCE_HEBREW to true to output Hebrew information in Hebrew, while
+# still outputting gregorian information in your default language. To
+# output ALL information in Hebrew, run something like this:
+#    LC_TEMP=LC_ALL; LC_ALL="he_IL.UTF-8"; hcal; LC_ALL=$LC_TEMP
+# If setting FORCE_HEBREW to true results in 'garbage' or non-Hebrew
+# output, you need to install a terminal font that includes the Hebrew
+# character set (hint: unicode).
+# The command line option for FORCE_HEBREW is either --hebrew or -H
+#FORCE_HEBREW=FALSE
+
+# The FORCE_HEBREW option outputs data that is 'correct' and 'logical'.
+# Unfortunately, the world can not be depended upon to be either. Most
+# Xwindow applications will display the data fine with FORCE_HEBREW; most
+# xterm implementations will not. (in fact, the only xterm clone I know
+# of that comes close is mlterm). If using FORCE_HEBREW results in
+# Hebrew characters being displayed in reverse, set OUTPUT_BIDI to true.
+# This will reverse the order of the Hebrew characters, so they will
+# display 'visual'ly correct; however, such output will not be suitable
+# for piping or pasting to many other applications. Setting OUTPUT_BIDI
+# automatically forces hebrew.
+# The command line option for OUTPUT_BIDI is either --bidi, --visual, or -b
+#OUTPUT_BIDI=FALSE
+
+# Display enhancements
+# hcal defaults to display the current day in reverse video
+# The command line option for this feature is --no-reverse
+#SUPPRESS_REVERSE_VIDEO=FALSE;
+# hcal can display its output "calming, muted tones". Note that piping
+# colorized output may yield unexpected results.
+#COLORIZE=FALSE
+
+# HTML OUTPUT
+#OUTPUT_HTML=FALSE
+#USE_EXTERNAL_CSS_FILE="pathto/foo/bar"
+
+# Suppress alerts and warnings
+# hcal alerts the user via STDERR when it guesses the user's location.
+#QUIET_ALERTS=FALSE
+
+# Three month display
+# hcal can display a previous, current and next month side-by-side. hcal
+# can also display a calendar for an entire year in four rows of three
+# months each. Note that this will display properly only if your console
+# is set for at least 127 columns. Note also that setting this option to
+# will cause options FOOTNOTES, SHABBAT, and PARASHA_NAMES to false.
+#THREE_MONTH=FALSE
+
+# User-defined menus
+# You may specify here command-line strings to optionally be parsed
+# by hcal at execution time. To do so, use the command line option -m
+# (--menu). hcal will process first the settings of this config file,
+# then the other settings of your command line, and then will prompt
+# you for which menu item you would like to select. hcal will process
+# your menu selection as if it were a new command line, further modifying
+# all the prior settings.
+# Only the first ten "MENU=" entries will be read. Each line will be
+# truncated at one hundred characters
+#MENU= -l -23.55 -L -46.61 -z -3      # parents in Sao Paolo
+#MENU= -l 32 -L 34 -z 2               # son in bnei brak
+#MENU= -fbc -l 43.71 -L -79.43 -z -5  # me in Toronto
+#MENU= -l 22.26 -L 114.15 -z 8        # supplier in Hong Kong
