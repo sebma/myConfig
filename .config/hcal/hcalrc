@@ -30,9 +30,9 @@ VERSION=2.00
 # delimiters. Use negative values to indicate South and West, or
 # use the abbreviated compass directions N, S, E, W.
 #LATITUDE=
-LATITUDE=48.7904
+LATITUDE=48.7904N
 #LONGITUDE=
-LONGITUDE=2.6545
+LONGITUDE=2.6545E
 # TIMEZONE may may be in decimal format or in the form degrees[:minutes]
 # with the characters :'" as possible delimiters.
 #TIMEZONE=
