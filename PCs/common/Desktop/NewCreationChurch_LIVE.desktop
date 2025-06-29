@@ -4,7 +4,5 @@ Type=Application
 Name=LIVE NCC
 Exec=mpv.sh --profile=fsd,live https://www.youtube.com/NewCreationChurch/live
 Terminal=false
-Icon=
-Comment=
-Path=/home/sebastien/privatePictures/BibleStudy/ncc/live_sermons/live_ncc
 StartupNotify=false
+Path=/home/sebastien/privatePictures/BibleStudy/ncc/live_sermons/live_ncc
