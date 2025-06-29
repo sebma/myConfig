@@ -5,4 +5,4 @@ Name=LIVE NCC
 Exec=mpv.sh --profile=fsd,live https://www.youtube.com/NewCreationChurch/live
 Terminal=false
 StartupNotify=false
-Path=/home/sebastien/privatePictures/BibleStudy/ncc/live_sermons/live_ncc
+Path=/home/sebastien/privatePictures/BibleStudy/ncc/live_sermons/live_ncc/
