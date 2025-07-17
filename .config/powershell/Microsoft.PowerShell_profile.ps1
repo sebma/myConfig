@@ -4,7 +4,7 @@
 $tls12 = [Enum]::ToObject([System.Net.SecurityProtocolType], 3072)
 [System.Net.ServicePointManager]::SecurityProtocol = $tls12
 
-Update-Help
+#Update-Help -UICulture en-US
 
 function osFamily {
 	if( !(Test-Path variable:IsWindows) ) {
