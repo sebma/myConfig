@@ -1,8 +1,7 @@
 REGEDIT4
 
 [HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Outlook]
-"Machine Name"="MA5154185"
+"Machine Name"="myComputerName"
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows Media\WMSDK\General]
-"ComputerName"="MA5154185"
-
+"ComputerName"="myComputerName"
