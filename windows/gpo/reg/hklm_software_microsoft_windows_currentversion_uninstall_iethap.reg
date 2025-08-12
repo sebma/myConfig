@@ -9,7 +9,7 @@ REGEDIT4
 "HelpTelephone"="Not Available"
 "InstallDate"="20120329"
 "InstallLocation"="C:\\Program Files\\Microsoft\\Internet Explorer (ThinApp)\\8.0\\"
-"InstallSource"="\\\\nasdef005\\tld$\\METIERS\\A_MCSFT_IETHAP_0008-000-0000-10_C2413831MSI\\"
+"InstallSource"="S:\\METIERS\\A_MCSFT_IETHAP_0008-000-0000-10_C2413831MSI\\"
 "ModifyPath"=hex(2):4d,73,69,45,78,65,63,2e,65,78,65,20,2f,58,7b,42,30,45,31,\
   41,32,35,31,2d,32,45,35,34,2d,34,30,30,36,2d,41,33,44,36,2d,36,39,35,34,33,\
   38,33,44,44,41,36,42,7d,00
@@ -29,3 +29,4 @@ REGEDIT4
 "Version"=dword:08000000
 "Language"=dword:0000040c
 "DisplayName"="A_MCSFT_IETHAP_0008-000-0000-10_C2413831"
+
