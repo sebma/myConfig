@@ -9,4 +9,4 @@ if ! grep $USER /etc/subuid;then
 	usermod --add-subuids $start-$last --add-subgids $start-$last $USER
 fi
 sudo groupadd docker
-#sudo adduser $USER docker
+#sudo adduser $USER docker # i.e. https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
