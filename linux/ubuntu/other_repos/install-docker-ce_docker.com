@@ -8,3 +8,5 @@ if ! grep $USER /etc/subuid;then
 	last=$(($start+$count-1))
 	usermod --add-subuids $start-$last --add-subgids $start-$last $USER
 fi
+sudo groupadd docker
+#sudo adduser $USER docker
