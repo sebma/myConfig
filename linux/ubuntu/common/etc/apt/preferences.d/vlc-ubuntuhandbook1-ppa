@@ -1,0 +1,3 @@
+Package: vlc* libvlc*
+Pin: release o=LP-PPA-ubuntuhandbook1-vlc
+Pin-Priority: 510
