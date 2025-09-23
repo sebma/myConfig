@@ -3,4 +3,5 @@ Defaults	env_reset,pwfeedback
 Defaults	env_keep += "EDITOR https_proxy"
 Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
 Defaults:%sudo env_keep += "apt_proxy"
+Defaults:%sudo env_keep += "DOCKER_BUILDKIT"
 %sudo	ALL=(ALL) ALL
