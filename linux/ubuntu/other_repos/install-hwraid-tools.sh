@@ -9,6 +9,6 @@ case $raidDriversList in
 		installPackagesFromRepo.sh "deb http://hwraid.le-vert.net/$distribName $(lsb_release -sc) main" hpacucli
 #		sudo add-apt-repository "deb http://hwraid.le-vert.net/ubuntu focal main"
 	;;
-	megaraid_sas) installPackagesFromRepo.sh "deb http://hwraid.le-vert.net/$distribName $(lsb_release -sc) main" megacli megactl megaclisas-status;;
+	megaraid_sas) installPackagesFromRepo.sh "deb http://hwraid.le-vert.net/$distribName $(lsb_release -sc) main" megacli megaclisas-status;;
 	*) echo "=> $raidDriversList is not supported yes" >&2;exit 1;;
 esac
