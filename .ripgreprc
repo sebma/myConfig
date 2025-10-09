@@ -5,4 +5,4 @@
 --no-ignore
 
 # Exclude directories.
---iglob=!{.git,*.iso,*.wim}
+--iglob=!*.{git,iso,bundle,dmg,wim,mp4}
