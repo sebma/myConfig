@@ -6,6 +6,9 @@
 	status = always
 [core]
 	editor = vim
+	hooksPath = myScripts/global/.githooks
+[credential]
+	helper = cache --timeout=86400
 [alias]
 	addv = add -v
 	br = branch
@@ -24,28 +27,24 @@
 	local-undelete = "!gitLocalUndelete() { git ls-files -d | grep . && git ls-files -d | xargs git checkout-index; }; gitLocalUndelete"
 	current-tag = describe --tags --abbrev=0
 	url = config remote.origin.url
+#[pager]
+#	diff = git diff --word-diff=plain --color -- "$@" | less # Shows the diff for all the changed files instead of that of "$@"
+#	show = git show --word-diff=plain --color -- "$@" | less
+[pull]
+	rebase = false
+[push]
+	default = current
 [safe]
 	directory = C:/ProgramData/scoop/buckets/main
 	directory = C:/ProgramData/scoop/buckets/versions
 	directory = C:/ProgramData/scoop/buckets/extras
 	directory = C:/ProgramData/scoop/buckets/nirsoft
 	directory = C:/ProgramData/scoop/apps/scoop/current
-#[pager]
-#	diff = git diff --word-diff=plain --color -- "$@" | less # Shows the diff for all the changed files instead of that of "$@"
-#	show = git show --word-diff=plain --color -- "$@" | less
-[credential]
-	helper = cache --timeout=86400
-[push]
-	default = current
 [filter "lfs"]
 	required = true
 	clean =  git-lfs clean  -- %f
 	process = git-lfs filter-process
 	smudge = git-lfs smudge -- %f
-[pull]
-	rebase = false
-[core]
-	hooksPath = myScripts/global/.githooks
 [diff "doc"]
 	textconv = catdoc
 	binary = true
