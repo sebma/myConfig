@@ -4,6 +4,8 @@
 [color]
 	ui = true
 	status = always
+[core]
+	editor = vim
 [alias]
 	addv = add -v
 	br = branch
