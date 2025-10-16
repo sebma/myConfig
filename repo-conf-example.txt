@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+#	url = https://github.com/sebma/myConfig
+	url = git@github.com:sebma/myConfig
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[alias]
+	ci = "!f() { cd ${GIT_PREFIX:-.}; for file; do git commit -uno \"$file\" -m \"Updated $file\"; done; }; f"
+[branch "firefox-esr_palemoon_waterfox"]
+	remote = origin
+	merge = refs/heads/firefox-esr_palemoon_waterfox
+[branch "kde4"]
+	remote = origin
+	merge = refs/heads/kde4
