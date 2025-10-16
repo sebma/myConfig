@@ -6,5 +6,7 @@ watch_later/
 *.p12
 .*.swp
 *.save
+*.log
+nohup.out
 smtube2.ini
 .config/mpv/mpv.conf
