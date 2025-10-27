@@ -1,0 +1,2 @@
+# Automatically moves read messages to secondary mail box : MBOX=~/mbox by default
+unset hold
