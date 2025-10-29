@@ -19,8 +19,18 @@
 	edit-global-config = config --global --edit
 	edit-local-config = config --local --edit
 	showw = show --word-diff=plain --color
-	mv-into-dir = "!mvIntoDIR() { cd ${GIT_PREFIX:-.};allArgsButLast=\"${@:1:$#-1}\";lastArg=\"${@: -1}\";git mv -v $allArgsButLast $lastArg/;git commit -uno $allArgsButLast $lastArg -m \"Moved $allArgsButLast into $lastArg/\"; }; mvIntoDIR"
-	mvv = "!mvVerbose() { cd ${GIT_PREFIX:-.};git mv -v \"$1\" \"$2\";git commit -uno \"$1\" \"$2\" -m \"Renamed $1 to $2\"; }; mvVerbose"
+	mv-into-dir = "!mvIntoDIR() { \
+cd ${GIT_PREFIX:-.}; \
+allArgsButLast=\"${@:1:$#-1}\"; \
+lastArg=\"${@: -1}\"; \
+git mv -v $allArgsButLast $lastArg/; \
+git commit -uno $allArgsButLast $lastArg -m \"Moved $allArgsButLast into $lastArg/\"; \
+}; mvIntoDIR"
+	mvv = "!mvVerbose() { \
+cd ${GIT_PREFIX:-.}; \
+git mv -v \"$1\" \"$2\"; \
+git commit -uno \"$1\" \"$2\" -m \"Renamed $1 to $2\"; \
+}; mvVerbose"
 	st = status -bs
 	stu = status -bs -uno
 	ls = ls-files
