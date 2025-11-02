@@ -1,7 +1,7 @@
 [Unit]
 Description=Record the New Creation Church Live sermon
 Requires=usr-local.mount
-After=autofs.service,usr-local.mount
+After=autofs.service usr-local.mount
 
 [Service]
 Type=oneshot
