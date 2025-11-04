@@ -12,7 +12,7 @@ syntax on
 " set mouse=v " For Alpine Linux
 " If ssh through a PowerShell session then change the colorscheme
 if &term =~ "xterm-256"
-    colorscheme blue
+	colorscheme blue
 endif
 " Shortcut to rapidly toggle `set list` with CTRL+L
 nmap <c-l> :set list!<CR>
