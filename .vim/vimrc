@@ -11,9 +11,7 @@ syntax on
 " set nocompatible # See https://askubuntu.com/a/353944/426176
 " set mouse=v " For Alpine Linux
 " If ssh through a PowerShell session then change the colorscheme
-if &term =~ "xterm-256"
-	colorscheme blue
-endif
+if &term =~ "xterm-256" | colorscheme blue | endif
 " Shortcut to rapidly toggle `set list` with CTRL+L
 nmap <c-l> :set list!<CR>
 nmap <c-t> :sort u<CR>
