@@ -12,6 +12,8 @@ syntax on
 " set mouse=v " For Alpine Linux
 " If ssh through a PowerShell session then change the colorscheme
 if &term =~ "xterm-256" | colorscheme blue | endif
+" Type 'echo colors_name' to check to current color theme
+
 " Shortcut to rapidly toggle `set list` with CTRL+L
 nmap <c-l> :set list!<CR>
 nmap <c-t> :sort u<CR>
