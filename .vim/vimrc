@@ -13,7 +13,8 @@ syntax on
 " If ssh through a PowerShell session then change the colorscheme
 colorscheme default
 " Type 'echo colors_name' to check to current color theme
-if &term =~ "xterm-256" | colorscheme blue | endif
+"if &term =~ "xterm-256" | colorscheme blue | endif
+if $IsWindows == "True" | colorscheme default | endif
 
 " Shortcut to rapidly toggle `set list` with CTRL+L
 nmap <c-l> :set list!<CR>
@@ -79,7 +80,7 @@ autocmd FileType json let &l:equalprg='jq . 2>/dev/null' "Pretty print JSON when
 call plug#begin('~/.vim/plugged')
 let g:plug_window = 'enew' "Open vim-plug without a split
 Plug 'vim-scripts/AdvancedSorters'
-Plug 'vim-scripts/ingo-library'
+uuu:Plug 'vim-scripts/ingo-library'
 Plug 'vim-scripts/matchit.zip' "use % to travel Shell's if, else, elif, fi.
 Plug 'vim-scripts/python_match.vim' " use % to travel Python's if, elif, etc.
 Plug 'vim-scripts/tagbar'
