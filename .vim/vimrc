@@ -14,7 +14,7 @@ syntax on
 " If ssh through a PowerShell session then change the colorscheme
 "if &term =~ "xterm-256" | colorscheme blue | endif
 if $IsWindows == "True" | colorscheme blue | endif
-if $osFamily =~ "Linux" | colorscheme default | endif
+if $OSTYPE =~ "linux" | colorscheme default | endif
 "if exists('colors_name') | echo colors_name | endif
 
 " Shortcut to rapidly toggle `set list` with CTRL+L
