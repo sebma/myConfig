@@ -1,6 +1,5 @@
 [Unit]
 Description=Mount /usr/local
-After=local-fs.target
 
 [Mount]
 What=LABEL="/usr/local"
