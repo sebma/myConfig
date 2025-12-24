@@ -95,6 +95,7 @@ call plug#end()
 
 set ruler
 set modeline
+set modelines=1 "See : https://superuser.com/a/611706/528454
 set tags+=./tags;
 set incsearch "Search in 'real-time'
 
