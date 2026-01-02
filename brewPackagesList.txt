@@ -1,4 +1,3 @@
-==> Formulae
 aria2
 audacious
 bash
@@ -14,6 +13,7 @@ diffutils
 docutils
 evince
 faad2
+fastfetch
 fd
 fdupes
 ffmpeg
