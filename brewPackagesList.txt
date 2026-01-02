@@ -1,3 +1,4 @@
+==> Formulae
 aria2
 audacious
 bash
@@ -103,7 +104,6 @@ zsh-completions
 zstd
 ==> Casks
 android-platform-tools
-anydesk
 audacity
 brave-browser
 cakebrew
@@ -120,6 +120,7 @@ mediainfo
 mplayerx
 mpv
 pinta
+rustdesk
 smplayer
 spyder
 thunderbird
