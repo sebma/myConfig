@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-installPackagesFromRepo.sh ppa:seokil/discord-on-linux discord-on-linux
