@@ -14,6 +14,7 @@ StartupWMClass=rustdesk
 X-Desktop-File-Install-Version=0.23
 X-Flatpak-RenamedFrom=rustdesk.desktop;
 X-Flatpak=com.rustdesk.RustDesk
+Hidden=true
 
 [Desktop Action new-window]
 Name=Open a New Window
