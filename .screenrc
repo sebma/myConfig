@@ -9,3 +9,4 @@ hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u
 termcapinfo xterm* ti@:te@
 # Write to the log file every 1s
 logfile flush 1
+logfile %S-%Y-%m-%d-%c.log
