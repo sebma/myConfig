@@ -10,4 +10,4 @@ termcapinfo xterm* ti@:te@
 # Write to the log file every 1s
 logfile flush 1
 # Logfile name is like $session-$year-$month-$day-$hours:$minutes.log
-logfile %S-%Y-%m-%d-%c.log
+logfile log/%S-%Y-%m-%d-%c.log
