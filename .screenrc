@@ -4,7 +4,6 @@ startup_message off
 defscrollback 10000
 # Customize the status line
 hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
 # Enable mouse scrolling and scroll bar history scrolling
 termcapinfo xterm* ti@:te@
 # Write to the log file every 1s
