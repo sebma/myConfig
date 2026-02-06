@@ -61,6 +61,7 @@ mplayer
 mps-youtube
 mpv
 neofetch
+nuttcp
 octave
 opus
 p7zip
