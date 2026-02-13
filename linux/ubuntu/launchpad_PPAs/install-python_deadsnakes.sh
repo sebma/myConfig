@@ -11,7 +11,7 @@ fi
 
 version=$1
 if grep [0-9].[0-9] -q <<< $version;then
-        echo installPackagesFromRepo.sh ppa:deadsnakes/ppa python-$version
+        installPackagesFromRepo.sh ppa:deadsnakes/ppa python-$version
 else
         echo "=> Please enter version in the form digit.digit" >&2
         exit 2
