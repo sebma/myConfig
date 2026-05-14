@@ -2,19 +2,18 @@
 conky.config = {
 -- conky configuration
 	out_to_x = no,
---	out_to_ncurses = true,
+--out_to_ncurses = true,
 -- edited by Clapico : http://www.clapico.com
 -- set to yes if you want Conky to be forked in the background
 	background = true,
 -- X font when Xft is disabled, you can pick one with program xfontsel
---font 5×7
---font 6×10
---font 7×13
---font 8×13
---font 9×15
---font *mintsmild.se*
---font -*-*-*-*-*-*-34-*-*-*-*-*-*-*
--- Use Xft?
+-- font 5x7
+-- font 6x10
+-- font 7x13
+-- font 8x13
+-- font 9x15
+-- font *mintsmild.se*
+-- font -*-*-*-*-*-*-34-*-*-*-*-*-*-*
 	use_xft = true,
 -- Xft font when Xft is enabled
 	font = 'Bitstream Vera Sans Mono:size=11',
