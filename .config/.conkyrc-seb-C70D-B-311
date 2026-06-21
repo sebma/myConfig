@@ -128,18 +128,18 @@ ${color white}${memgraph mem yellow FC8820}
 #${color white}IO Writes :${color2} $memperc% : $mem/$memmax ${color white}${membar}
 ${color white}Disk I/O R/W :
 ${color white}${diskiograph /dev/sda yellow FC8820}
-#${color white}Occupation du Swap :${color2} $swap/$swapmax - $swapperc% ${color white}${swapbar}
-${color white}Occupation de /boot : ${color2}${fs_used /boot} / ${fs_size /boot} - ${fs_used_perc /boot}% ${color white}${fs_bar /boot}
-${color white}Occupation de /: ${color2}${fs_used /} / ${fs_size /} - ${fs_used_perc /}% ${color white}${fs_bar /}
-${color white}Occupation de /usr : ${color2}${fs_used /usr} / ${fs_size /usr} - ${fs_used_perc /usr}% ${color white}${fs_bar /usr}
-${color white}Occupation de /usr/local : ${color2}${fs_used /usr/local} / ${fs_size /usr/local} - ${fs_used_perc /usr/local}% ${color white}${fs_bar /usr/local}
-${color white}Occupation de /var : ${color2}${fs_used /var} / ${fs_size /var} - ${fs_used_perc /var}% ${color white}${fs_bar /var}
-${color white}Occupation de /var/tmp : ${color2}${fs_used /var/tmp} / ${fs_size /var/tmp} - ${fs_used_perc /var/tmp}% ${color white}${fs_bar /var/tmp}
-${color white}Occupation de /var/cache : ${color2}${fs_used /var/cache} / ${fs_size /var/cache} - ${fs_used_perc /var/cache}% ${color white}${fs_bar /var/cache}
-${color white}Occupation de /opt : ${color2}${fs_used /opt} / ${fs_size /opt} - ${fs_used_perc /opt}% ${color white}${fs_bar /opt}
-${color white}Occupation de /tmp : ${color2}${fs_used /tmp} / ${fs_size /tmp} - ${fs_used_perc /tmp}% ${color white}${fs_bar /tmp}
-${color white}Occupation de /home : ${color2}${fs_used /home} / ${fs_size /home} - ${fs_used_perc /home}% ${color white}${fs_bar /home}
-${color white}Occupation de /multimedia : ${color2}${fs_used /multimedia} / ${fs_size /multimedia} - ${fs_used_perc /multimedia}% ${color white}${fs_bar /multimedia}
+#${color white}Utilisation du Swap :${color2} $swap/$swapmax - $swapperc% ${color white}${swapbar}
+${color white}Utilisation de /boot : ${color2}${fs_used /boot} / ${fs_size /boot} - ${fs_used_perc /boot}% ${color white}${fs_bar /boot}
+${color white}Utilisation de /: ${color2}${fs_used /} / ${fs_size /} - ${fs_used_perc /}% ${color white}${fs_bar /}
+${color white}Utilisation de /usr : ${color2}${fs_used /usr} / ${fs_size /usr} - ${fs_used_perc /usr}% ${color white}${fs_bar /usr}
+${color white}Utilisation de /usr/local : ${color2}${fs_used /usr/local} / ${fs_size /usr/local} - ${fs_used_perc /usr/local}% ${color white}${fs_bar /usr/local}
+${color white}Utilisation de /var : ${color2}${fs_used /var} / ${fs_size /var} - ${fs_used_perc /var}% ${color white}${fs_bar /var}
+${color white}Utilisation de /var/tmp : ${color2}${fs_used /var/tmp} / ${fs_size /var/tmp} - ${fs_used_perc /var/tmp}% ${color white}${fs_bar /var/tmp}
+${color white}Utilisation de /var/cache : ${color2}${fs_used /var/cache} / ${fs_size /var/cache} - ${fs_used_perc /var/cache}% ${color white}${fs_bar /var/cache}
+${color white}Utilisation de /opt : ${color2}${fs_used /opt} / ${fs_size /opt} - ${fs_used_perc /opt}% ${color white}${fs_bar /opt}
+${color white}Utilisation de /tmp : ${color2}${fs_used /tmp} / ${fs_size /tmp} - ${fs_used_perc /tmp}% ${color white}${fs_bar /tmp}
+${color white}Utilisation de /home : ${color2}${fs_used /home} / ${fs_size /home} - ${fs_used_perc /home}% ${color white}${fs_bar /home}
+${color white}Utilisation de /multimedia : ${color2}${fs_used /multimedia} / ${fs_size /multimedia} - ${fs_used_perc /multimedia}% ${color white}${fs_bar /multimedia}
 #${color white}Processus :${color2} $processes ${color white} En cours :${color2} $running_processes
 ${color white}Utilisation du CPU
 ${offset 10}${color white}NAME ${alignr 50}PID ${alignr 20}%CPU
