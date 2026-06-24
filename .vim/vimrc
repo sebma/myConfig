@@ -1,4 +1,5 @@
 scriptencoding utf-8
+set mouse=
 set listchars=tab:»»
 if has("patch-7.4.710") | set listchars+=space:· | else | set listchars+=trail:· | endif
 set listchars+=eol:¶
