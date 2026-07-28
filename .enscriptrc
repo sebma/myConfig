@@ -1,0 +1,20 @@
+# A TESTER
+
+# A4 paper
+Media: A4
+
+# 2-up landscape printing
+2-Up: true
+Landscape: true
+
+# 90 columns
+LinesPerPage: 90
+
+# Pretty printing (syntax highlighting when recognized)
+HighlightBars: true
+
+# Draw borders around pages
+Borders: true
+
+# Color output if supported by printer/PostScript workflow
+Color: true
