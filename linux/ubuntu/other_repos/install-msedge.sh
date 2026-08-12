@@ -11,7 +11,7 @@ if ! dpkg -s packages-microsoft-prod &>/dev/null;then
 fi
 
 if ! dpkg -s microsoft-edge-stable &>/dev/null;then
-	sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" -y
+	sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/repos/edge stable main" -y
 	sudo apt update
 	sudo apt install -V microsoft-edge-stable
 fi
