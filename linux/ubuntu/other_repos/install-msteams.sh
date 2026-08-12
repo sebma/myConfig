@@ -11,7 +11,8 @@ if ! dpkg -s packages-microsoft-prod &>/dev/null;then
 fi
 
 if ! dpkg -s ms-teams &>/dev/null;then
-	sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main" -y
+	echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/repos/ms-teams stable main" \
+| sudo tee /etc/apt/sources.list.d/ms-teams.list
 	sudo apt update
 	sudo apt install -V ms-teams
 fi
