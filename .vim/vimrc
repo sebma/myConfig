@@ -21,7 +21,7 @@ if $IsWindows == "True" | colorscheme blue | endif
 
 " Shortcut to rapidly toggle `set list` with CTRL+L
 nmap <c-l> :set list!<CR>
-nmap <c-t> :sort u<CR>
+nmap <c-t> :%s/ http/\rhttp/g \| :sort u<CR>
 " Show line numbers
 nmap <c-n> :set nu! \| :set ruler<CR>
 " Reload current file
