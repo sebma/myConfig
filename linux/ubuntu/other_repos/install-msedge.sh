@@ -14,6 +14,6 @@ arch=$(dpkg --print-architecture)
 if ! dpkg -s microsoft-edge-stable &>/dev/null;then
 	echo "deb [arch=$arch signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/repos/edge stable main" \
 | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
-	sudo apt update
+	apt policy microsoft-edge-stable | grep 'Candidate:' -q || sudo apt update
 	sudo apt install -V microsoft-edge-stable
 fi
