@@ -10,8 +10,9 @@ if ! dpkg -s packages-microsoft-prod &>/dev/null;then
 	curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft-prod.gpg --yes
 fi
 
+arch=$(dpkg --print-architecture)
 if ! dpkg -s microsoft-edge-stable &>/dev/null;then
-	echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/repos/edge stable main" \
+	echo "deb [arch=$arch signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/repos/edge stable main" \
 | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
 	sudo apt update
 	sudo apt install -V microsoft-edge-stable
