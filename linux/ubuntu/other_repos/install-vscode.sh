@@ -15,5 +15,5 @@ if ! dpkg -s code &>/dev/null;then
 	echo "deb [arch=$arch signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/repos/code stable main" \
 | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
 	sudo apt update
-	sudo apt install -V code
+	sudo apt install -V code code-exploration code-insiders
 fi
