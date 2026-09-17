@@ -12,6 +12,6 @@ if ! dpkg -s packages-microsoft-prod &>/dev/null;then
 fi
 
 if ! dpkg -s powershell &>/dev/null;then
-	sudo apt update
+	apt policy powershell | grep 'Candidate:' -q || sudo apt update
 	sudo apt install -V powershell
 fi
