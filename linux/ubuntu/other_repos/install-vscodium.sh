@@ -10,7 +10,7 @@ wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.g
 arch=$(dpkg --print-architecture)
 if ! dpkg -s codium &>/dev/null;then
 	echo -e 'Types: deb\nURIs: https://download.vscodium.com/debs\nSuites: vscodium\nComponents: main\nArchitectures: amd64 arm64\nSigned-by: /usr/share/keyrings/vscodium-archive-keyring.gpg' \
-| sudo tee /etc/apt/sources.list.d/codium.list
+| sudo tee /etc/apt/sources.list.d/codium.sources
 	apt policy codium | grep 'Candidate:' -q || sudo apt update
 	sudo apt install -V codium codium-exploration codium-insiders
 fi
