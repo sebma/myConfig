@@ -14,6 +14,6 @@ arch=$(dpkg --print-architecture)
 if ! dpkg -s ms-teams &>/dev/null;then
 	echo "deb [arch=$arch signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/repos/ms-teams stable main" \
 | sudo tee /etc/apt/sources.list.d/ms-teams.list
-	sudo apt update
+	apt policy ms-teams | grep 'Candidate:' -q || sudo apt update
 	sudo apt install -V ms-teams
 fi
