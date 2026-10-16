@@ -50,25 +50,25 @@ git commit -uno \"$1\" \"$2\" -m \"Renamed $1 to $2\"; \
 	directory = C:/ProgramData/scoop/buckets/extras
 	directory = C:/ProgramData/scoop/buckets/nirsoft
 	directory = C:/ProgramData/scoop/apps/scoop/current
+[diff "doc"]
+	textconv = catdoc
+	binary = true
+	cachetextconv = true
 [filter "lfs"]
 	required = true
 	clean =  git-lfs clean  -- %f
 	process = git-lfs filter-process
 	smudge = git-lfs smudge -- %f
-[diff "doc"]
-	textconv = catdoc
-	binary = true
-	cachetextconv = true
-[diff "xls"]
-	textconv = xls2csv
+[diff "odt"]
+	textconv = odt2txt
 	binary = true
 	cachetextconv = true
 [diff "ppt"]
 	textconv = catppt
 	binary = true
 	cachetextconv = true
-[diff "odt"]
-	textconv = odt2txt
+[diff "xls"]
+	textconv = xls2csv
 	binary = true
 	cachetextconv = true
 [diff "zip"]
