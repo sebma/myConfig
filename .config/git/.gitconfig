@@ -59,6 +59,10 @@ git commit -uno \"$1\" \"$2\" -m \"Renamed $1 to $2\"; \
 	textconv = catdoc
 	binary = true
 	cachetextconv = true
+[diff "kdbx"]
+	textconv = diff-kdbx --textconv
+	binary = true
+	cachetextconv = true
 [diff "odt"]
 	textconv = odt2txt
 	binary = true
