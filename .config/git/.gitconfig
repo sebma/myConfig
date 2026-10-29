@@ -34,7 +34,7 @@ git commit -uno \"$1\" \"$2\" -m \"Renamed $1 to $2\"; \
 	st = status -bs
 	stu = status -bs -uno
 	ls = ls-files
-	local-undelete = "!gitLocalUndelete() { git ls-files -d | grep . && git ls-files -d | xargs git checkout-index; }; gitLocalUndelete"
+	local-undelete = !git ls-files -d | grep . && git ls-files -d | xargs git checkout-index
 	current-tag = describe --tags --abbrev=0
 	url = config remote.origin.url
 #[pager]
